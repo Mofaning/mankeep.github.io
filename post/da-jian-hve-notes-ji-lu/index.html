@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>随然</title>
+<title>搭建Hve Notes纪录 | 随然</title>
 <meta name="description" content="随缘，自然，慢慢记">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -11,6 +11,12 @@
 <link rel="shortcut icon" href="https://mankeep.github.io/favicon.ico">
 <link rel="stylesheet" href="https://mankeep.github.io/styles/main.css">
 
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
 
 
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
@@ -75,42 +81,35 @@
 
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://mankeep.github.io/post/da-jian-hve-notes-ji-lu">
-                  <h2 class="post-title">搭建Hve Notes纪录</h2>
-                </a>
-                <div class="post-date">
-                  2019-03-13
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://mankeep.github.io/post/ying-yu-kai-shi-xue">
-                  <h2 class="post-title">英语，开始学</h2>
-                </a>
-                <div class="post-date">
-                  2019-03-13
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
+          <div class="post-detail">
+            <h2 class="post-title">搭建Hve Notes纪录</h2>
+            <div class="post-date">2019-03-13</div>
+            
+            <div class="post-content">
+              <p>一直想找一个能搭建在github上的博客程序，了解过hexo、jekyll等，奈何技术实在不看一天，迟迟没能如愿；<br>机缘巧合在小众上看到hve notes，安装简单，操作熟练，和vnote很像，并且支持Markdown语法，图片蜂蜜，自定义标签，还有评论，如下：<img src="https://mankeep.github.io/post-images/1552460602855.png" alt=""><br>安装方面很常规，作者已经贴了：<br><a href="https://fehey.com/post/hve-notes-start/">https://fehey.com/post/hve-notes-start/</a><br>遇到的一些问题整理：<br>自定义仓库是可以的但是还需要额外设置 github pages 选项<br>我直接用的用户名，由作者协助帮忙弄的所以没设置github pages<br>关于评论方面：<br>如果自定义了域名，需要把url和都填写成指向域名（注：hvenotes仓库是不需要的，直接写仓库地址）<br>关于备份：<br>我选择了坚果云直接同步文件夹一般的位置在： ~/Dcouments/hve-notes </p>
 
-          <div class="pagination-container">
-  
-  
-</div>
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://mankeep.github.io/post/ying-yu-kai-shi-xue">
+                  <h3 class="post-title">
+                    英语，开始学
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
 
         </div>
       </div>
@@ -132,6 +131,29 @@ var app = new Vue({
 })
 
 </script>
+
+
+  
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '0239274251b859f63737',
+        clientSecret: '777a65a6c1e9c3e94b8058d503450a5141660386',
+        repo: 'mankeep.github.io',
+        owner: 'mankeep',
+        admin: ['mankeep'],
+        id: location.pathname,      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
 
 
 
