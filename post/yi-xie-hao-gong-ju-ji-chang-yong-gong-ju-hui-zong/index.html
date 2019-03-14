@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>一些好工具及常用工具汇总 | 随然</title>
+<meta name="description" content="随缘，自然，慢慢记">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="shortcut icon" href="https://mankeep.github.io/favicon.ico">
+<link rel="stylesheet" href="https://mankeep.github.io/styles/main.css">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://mankeep.github.io">
+        <img src="https://mankeep.github.io/images/avatar.png" class="site-logo">
+        <h1 class="site-title">随然</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="site-description">
+      随缘，自然，慢慢记
+    </div>
+    <div class="site-footer">
+      Powered by Hve Notes © 2019 Copyright Suiran. All Rights Reserved.
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">一些好工具及常用工具汇总</h2>
+            <div class="post-date">2019-03-14</div>
+            
+            <div class="post-content">
+              <h1 id="笔记类：">笔记类：</h1><p>&quot;<br>最常用的就是印象笔记了，13年开始用，到现在基本上是全都堆进去了，笔记乱七八糟的一万多条，看着都头疼<br>不过笔记虽多，但是搜索真的很强大，不用费什么劲就能找到内容，多终端同步，速读很快；</p>
+<p>另外就是想把blog捡起来，总感觉比笔记要看着舒服点；</p>
+<h1 id="网盘类：">网盘类：</h1><p>之前用dropbox 并且空间升级到了19g，是真的好用啊，但是受网络的影响，整天挂着ssr 也是好麻烦的<br>最后选择 了onedrive 速读慢了点，但是还能用啊，空间小了点，但是还能用啊，文件之类的丢坚果云吧，你说啥，百度云？emm……</p>
+<h1 id="快捷操作类">快捷操作类</h1><p>listar pro 还有很多，都不错，只不过习惯他而已</p>
+<h1 id="一些网站">一些网站</h1><p>小众软件：<br>少数派<br>微薄<br>煎蛋<br>知乎<br>V2EX<br>Hi!PDA 有时候也会上<br>待补充</p>
+<h1 id="ios app">IOS app</h1><p>微薄替换--&gt;weico<br>reeder3 看订阅<br>Evermemo 全当便签用 同步到印象笔记<br>Mars 可以看一些地区好玩的<br>moneypro 记账<br>瓣读 不是因为豆瓣，没别的就是能同步到印象笔记……<br>素记  每天碎碎念<br>蜗牛读书：每天一小时 还不错<br>kindle  +设备<br>微信读书 用的少<br>黄即（即刻）用的少</p>
+<p>图片：谷歌相册 同步<br>修图：mix san pseed<br>ihabit 习惯打卡（纯属手欠，点了高级莫名其妙付了高级用户 没办法 先用着吧）</p>
+<p>手机的app还有很多，总体是还要卸载的，<br>目前已卸：知乎，好奇心，V2EX 、澎湃新闻、全部通过网页端访问</p>
+<p>还有在补充了（感觉特么写的好乱）</p>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://mankeep.github.io/post/ying-yu-kai-shi-xue">
+                  <h3 class="post-title">
+                    英语，开始学
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+  
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '0239274251b859f63737',
+        clientSecret: '777a65a6c1e9c3e94b8058d503450a5141660386',
+        repo: 'mankeep.github.io',
+        owner: 'mankeep',
+        admin: ['mankeep'],
+        id: location.pathname,      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
+  </body>
+</html>
