@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>随然</title>
+<title>学习音标 | 随然</title>
 <meta name="description" content="随缘，自然，慢慢记">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -11,6 +11,12 @@
 <link rel="shortcut icon" href="https://mankeep.github.io/favicon.ico">
 <link rel="stylesheet" href="https://mankeep.github.io/styles/main.css">
 
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
 
 
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
@@ -75,72 +81,43 @@
 
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://mankeep.github.io/post/M54B_kbgT">
-                  <h2 class="post-title">学习音标</h2>
-                </a>
-                <div class="post-date">
-                  2019-03-15
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://mankeep.github.io/post/chang-yong-gong-ju-app">
-                  <h2 class="post-title">常用工具App</h2>
-                </a>
-                <div class="post-date">
-                  2019-03-14
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://mankeep.github.io/post/ying-yu-kai-shi-xue">
-                  <h2 class="post-title">英语，开始学</h2>
-                </a>
-                <div class="post-date">
-                  2019-03-14
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://mankeep.github.io/post/da-jian-hve-notes-ji-lu">
-                  <h2 class="post-title">搭建Hve Notes纪录</h2>
-                </a>
-                <div class="post-date">
-                  2019-03-13
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
+          <div class="post-detail">
+            <h2 class="post-title">学习音标</h2>
+            <div class="post-date">2019-03-15</div>
+            
+            <div class="post-content">
+              <h1 id="b站 周育如老师的音标教学简直有魔性">B站 周育如老师的音标教学简直有魔性</h1><h2 id="#音标表：">#音标表：</h2><p>*<em>a[æ]唉唉，<br>b[b]波波，<br>c[k]咳咳，<br>d[d]的的，<br>e[ɛ]哎哎，<br>f[f]敷敷，<br>g[gg]个个，<br>h[h]和和，<br>i[I]仪仪，<br>j[dj]聚聚，<br>K[k]壳壳，<br>l  [l]前勒勒<br>   [l]后嗷嗷，<br>m[m]前嘛嘛<br>   [m]后摁摁，<br>nn[n]前呢呢<br>        [n]后嗯嗯，<br>o[a]啊啊，<br>p[p]迫迫，<br>q[kw]括括，<br>r [r]前弱弱<br>    [r]后尔尔，<br>s[s]丝丝，<br>t[t]特特，<br>u[ʌ]阿阿，<br>v[v]呜呜，<br>w[w]戊戊，<br>x[ks]克斯，<br>y[j]叶叶，<br>z[z]滋滋<br>*</em></p>
 
-          <div class="pagination-container">
-  
-  
-</div>
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://mankeep.github.io/tag/guan-yu-ying-yu" class="tag">
+                    关于英语
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://mankeep.github.io/post/chang-yong-gong-ju-app">
+                  <h3 class="post-title">
+                    常用工具App
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
 
         </div>
       </div>
@@ -162,6 +139,29 @@ var app = new Vue({
 })
 
 </script>
+
+
+  
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '0239274251b859f63737',
+        clientSecret: '777a65a6c1e9c3e94b8058d503450a5141660386',
+        repo: 'mankeep.github.io',
+        owner: 'mankeep',
+        admin: ['mankeep'],
+        id: location.pathname,      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
 
 
 
