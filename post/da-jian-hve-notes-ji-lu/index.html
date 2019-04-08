@@ -1,90 +1,71 @@
-<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" >
-
-<title>搭建Hve Notes纪录 | 随然</title>
-<meta name="description" content="随缘，自然，慢慢记">
-
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>搭建Hve Notes纪录 | 随然默记</title>
 <link rel="shortcut icon" href="https://mankeep.github.io/favicon.ico">
 <link rel="stylesheet" href="https://mankeep.github.io/styles/main.css">
 
-
-  
-    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
-  
-
-  
-
-
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
 
 
   </head>
   <body>
-    <div id="app" class="main">
-
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
-  <div class="top-container" data-aos="fade-right">
-    <div class="top-header-container">
-      <a class="site-title-container" href="https://mankeep.github.io">
-        <img src="https://mankeep.github.io/images/avatar.png" class="site-logo">
-        <h1 class="site-title">随然</h1>
-      </a>
-      <div class="menu-btn" @click="menuVisible = !menuVisible">
-        <div class="line"></div>
-      </div>
-    </div>
-    <div>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://mankeep.github.io">
+  <img class="avatar" src="https://mankeep.github.io/images/avatar.png" alt="" width="80px" height="80px">
+  </a>
+  <h1 class="site-title">
+    随然默记
+  </h1>
+  <p class="site-description">
+    随缘，自然，慢慢记，默默记
+  </p>
+  <div class="menu-container">
+    
       
-        
-          <a href="/" class="site-nav">
-            首页
-          </a>
-        
+        <a href="/" class="menu">
+          首页
+        </a>
       
-        
-          <a href="/archives" class="site-nav">
-            归档
-          </a>
-        
+    
       
-        
-          <a href="/tags" class="site-nav">
-            标签
-          </a>
-        
+        <a href="/archives" class="menu">
+          归档
+        </a>
       
-        
-          <a href="/post/about" class="site-nav">
-            关于
-          </a>
-        
+    
       
-    </div>
-  </div>
-  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
-    <div class="site-description">
-      随缘，自然，慢慢记
-    </div>
-    <div class="site-footer">
-      Powered by Hve Notes © 2019 Copyright Suiran. All Rights Reserved.
-    </div>
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
   </div>
 </div>
 
-
-      <div class="main-container">
-        <div class="content-container" data-aos="fade-up">
-          <div class="post-detail">
-            <h2 class="post-title">搭建Hve Notes纪录</h2>
-            <div class="post-date">2019-03-13</div>
-            
+      
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              搭建Hve Notes纪录
+            </h2>
+            <div class="post-info">
+              <time class="post-time">
+                · 2019-03-13 ·
+              </time>
+              
+            </div>
             <div class="post-content">
               <p><strong>起源</strong><br>一直想找一个能搭建在github上的博客程序，了解过hexo、jekyll等，奈何技术实在不堪一提，迟迟没能如愿；<br>机缘巧合在小众上看到hve notes，安装简单，操作熟练，和vnote很像，并且支持Markdown语法功能如下：![]<img src="https://s2.ax1x.com/2019/03/14/AA6qRe.png" alt="AA6qRe.png"><br><strong>安装</strong><br>安装方面很常规，作者已经贴了：<a href="%E8%B6%85%E9%93%BE%E6%8E%A5%E5%9C%B0%E5%9D%80%22https://fehey.com/post/hve-notes-start/%22">hve notes安装</a></p>
 <blockquote>
@@ -113,65 +94,48 @@
 <p>快快开始你的创作吧！<br><strong>遇到的一些问题整理：</strong><br>自定义仓库是可以的但是还需要额外设置 github pages 选项<br>我直接用的用户名，由作者协助帮忙弄的所以没设置github pages<br>关于评论方面：<br>如果自定义了域名，需要把url和都填写成指向域名（注：hvenotes仓库是不需要的，直接写仓库地址）<br>关于备份：<br>我选择了坚果云直接同步文件夹（默认位置在：文档下的hve-notes）</p>
 
             </div>
-            
-            
-
-            
-              
-                <div id="gitalk-container" data-aos="fade-in"></div>
-              
-
-              
-            
-
-          </div>
-
+          </article>
         </div>
-      </div>
-    </div>
+    
+        
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 
-<script type="application/javascript">
+<div id="gitalk-container"></div>
 
-AOS.init();
+<script>
 
-hljs.initHighlightingOnLoad()
+  var gitalk = new Gitalk({
+    clientID: '0239274251b859f63737',
+    clientSecret: '777a65a6c1e9c3e94b8058d503450a5141660386',
+    repo: 'mankeep.github.io',
+    owner: 'mankeep',
+    admin: ['mankeep'],
+    id: location.pathname,      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
 
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
+  gitalk.render('gitalk-container')
 
 </script>
 
+          
 
-  
-  
-    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-    <script>
+          
+        
+    
+        <div class="site-footer">
+  Powered by Hve Notes © 2019 Copyright Suiran. All Rights Reserved.
+</div>
 
-      var gitalk = new Gitalk({
-        clientID: '0239274251b859f63737',
-        clientSecret: '777a65a6c1e9c3e94b8058d503450a5141660386',
-        repo: 'mankeep.github.io',
-        owner: 'mankeep',
-        admin: ['mankeep'],
-        id: location.pathname,      // Ensure uniqueness and length less than 50
-        distractionFreeMode: false  // Facebook-like distraction free mode
-      })
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
 
-      gitalk.render('gitalk-container')
-
-    </script>
-  
-
-  
-
-
-
-
+      </div>
+    </div>
   </body>
 </html>
