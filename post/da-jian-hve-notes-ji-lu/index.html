@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>搭建Hve Notes纪录 | 随然默记</title>
+<meta name="description" content="随缘，自然，慢慢记，默默记">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="shortcut icon" href="https://mankeep.github.io/favicon.ico?v=1554948523509">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
+<link rel="stylesheet" href="https://mankeep.github.io/styles/main.css">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+  </head>
+  <body>
+  
+    <nav class="navbar border fixed split-nav">
+  <div class="nav-brand">
+    <h3><a href="https://mankeep.github.io">随然默记</a></h3>
+  </div>
+  <div class="collapsible">
+    <input id="collapsible1" type="checkbox" name="collapsible1">
+    <button>
+      <label for="collapsible1">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </label>
+    </button>
+    <div class="collapsible-body">
+      <ul class="inline">
+        
+          <li>
+            
+              <a href="/" class="menu">
+                首页
+              </a>
+            
+          </li>
+        
+          <li>
+            
+              <a href="/archives" class="menu">
+                归档
+              </a>
+            
+          </li>
+        
+          <li>
+            
+              <a href="/tags" class="menu">
+                标签
+              </a>
+            
+          </li>
+        
+          <li>
+            
+              <a href="/post/about" class="menu">
+                关于
+              </a>
+            
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div id="top" class="row site">
+      <div class="sm-12 md-8 col">
+        <div class="paper">
+          <article class="article">
+            <h1>搭建Hve Notes纪录</h1>
+            <p class="article-meta">
+              2019-03-13
+              
+            </p>
+            <img src="" alt="搭建Hve Notes纪录">
+            <div class="post-content">
+              <p><strong>起源</strong>
+一直想找一个能搭建在github上的博客程序，了解过hexo、jekyll等，奈何技术实在不堪一提，迟迟没能如愿；
+机缘巧合在小众上看到hve notes，安装简单，操作熟练，和vnote很像，并且支持Markdown语法功能如下：![]<img src="https://s2.ax1x.com/2019/03/14/AA6qRe.png" alt="AA6qRe.png">
+<strong>安装</strong>
+安装方面很常规，作者已经贴了：<a href="%E8%B6%85%E9%93%BE%E6%8E%A5%E5%9C%B0%E5%9D%80%22https://fehey.com/post/hve-notes-start/%22">hve notes安装</a></p>
+<blockquote>
+<p>如果你使用过 Hexo 等工具基于 Github 做个人博客，那么恭喜你，你可以很轻松的上手使用Hve Notes
+如果你以前没有使用过，那么希望这篇文章可以帮助你顺利的完成博客搭建。话不多说，Let's Go!</p>
+</blockquote>
+<p><strong>准备工作</strong>
+由于 Github 和 Coding 的步骤差不多，下面就以 Github 为例来操作一下</p>
+<p>必须：确保你已经安装过 Git 和 Hve Notes</p>
+<p>首先你需要一个 Github 账号，如果没有的话，快去注册一个吧！</p>
+<p>登录 Github，然后进入到 这里 创建一个 Token，勾选上 repo 的相关权限即可，下面是对应的截图示例：
+<img src="https://mankeep.github.io/post-images/1552462219160.png" alt=""></p>
+<p>生成之后你可以复制 Token 到你可以再次找到的某个地方，因为一旦你关了这个网页就再也不会看到它了，稍后会在软件中使用</p>
+<p><img src="https://mankeep.github.io/post-images/1552462237529.png" alt=""></p>
+<p>接下来你需要创建一个仓库，用来存放博客构建后的静态文件。我们建议你创建仓库名为 用户名.github.io 的仓库，因为 Github 会默认将此仓库设置成 Github Pages 可访问类型，若不是用此命名的仓库，则不能默认使用 Github Pages，所以请认真确认。例如我的 Github 用户名为 EryouHao，则仓库名为 EryouHao.github.io。使用这种方式还有一个好处是，在没有自定义域名的情况下，使你的博客域名更短。当然如果想使用其他仓库来存放博客静态文件的话，也不是不可以，只不过，存放之后，若没有设置自定义域名，则访问地址将变成 https://用户名.github.io/blog （blog 为仓库名）这种二级目录的形式。</p>
+<p><strong>开始使用</strong>
+打开 Hve Notes 进入到配置页面，然后按照下面示例，输入相关配置并保存</p>
+<p><img src="https://mankeep.github.io/post-images/1552462266305.png" alt=""></p>
+<p>在不开启文章评论的情况下，到此为止，你已经可以点击预览，点击同步进行博客部署啦，快去试试看吧！（当然在不同步的情况下）</p>
+<p><strong>开启文章评论</strong>
+Hve Notes 目前提供了 Gitalk 和 Disqus 两种评论系统支持。</p>
+<p>Gitalk 是一个基于 GitHub Issue 和 Preact 开发的评论插件。如果你博客使用的是 Gitalk 的话，建议你可以选择 Gitalk 来作为评论插件。</p>
+<p>你可以按照 Gitalk 的文档 进行相关字段配置，或者按照下面的步骤操作。</p>
+<p>首先你需要有一个 Github OAuth Application，点击这里创建，字段填写可以参照下图</p>
+<p><img src="https://mankeep.github.io/post-images/1552462289957.png" alt=""></p>
+<p>创建完成后可将 Client ID 和 Client Secret复制一下，保存到本地</p>
+<p><img src="https://mankeep.github.io/post-images/1552462309375.png" alt=""></p>
+<p>接下来就可以去应用里面填写对应的信息，并开启评论</p>
+<p><img src="https://mankeep.github.io/post-images/1552462321297.png" alt=""></p>
+<p>这样评论插件就设置好了，在预览时会在文章页显示评论模块，但不会显示具体的评论信息，因为这个是本地预览，而 Github OAuth 设置的域名为线上的域名。待博客同步到线上时就可以显示啦！</p>
+<p>快快开始你的创作吧！
+<strong>遇到的一些问题整理：</strong>
+自定义仓库是可以的但是还需要额外设置 github pages 选项
+我直接用的用户名，由作者协助帮忙弄的所以没设置github pages
+关于评论方面：
+如果自定义了域名，需要把url都填写成指向域名（注：hvenotes仓库是不需要的，直接写仓库地址）
+关于备份：
+我选择了坚果云直接同步文件夹（默认位置在：文档下的hve-notes）</p>
+
+            </div>
+          </article>
+        </div>
+        <div class="paper" data-aos="fade-in">
+          
+        </div>
+        
+          
+            <div class="paper" data-aos="fade-in">
+              <div id="gitalk-container"></div>
+            </div>
+          
+
+          
+        
+      </div>
+
+      <div class="sm-12 md-4 col sidebar">
+  <div class="paper info-container">
+    <img src="https://mankeep.github.io/images/avatar.png?v=1554948523509" class="no-responsive avatar">
+    <div class="text-muted">随缘，自然，慢慢记，默默记</div>
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+  </div>
+  <div class="paper">
+    <div class="sidebar-title">
+      最新文章
+    </div>
+    <div class="row">
+      <ul>
+        
+          
+            <li>
+              <a href="https://mankeep.github.io/post/chang-yong-gong-ju-app">常用工具App</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://mankeep.github.io/post/da-jian-hve-notes-ji-lu">搭建Hve Notes纪录</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://mankeep.github.io/post/about">关于</a>
+            </li>
+          
+        
+      </ul>
+    </div>
+  </div>
+  <div class="paper">
+    <div class="sidebar-title">
+      标签列表
+    </div>
+    <div class="row">
+      
+        <a href="https://mankeep.github.io/tag/app" class="badge secondary">
+          App
+        </a>
+      
+    </div>
+  </div>
+  <div class="paper">
+    Powered by Hve Notes © 2019 Copyright Suiran. All Rights Reserved.
+  </div>
+</div>
+
+
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
+
+hljs.initHighlightingOnLoad()
+
+</script>
+
+
+  
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '0239274251b859f63737',
+        clientSecret: '777a65a6c1e9c3e94b8058d503450a5141660386',
+        repo: 'mankeep.github.io',
+        owner: 'mankeep',
+        admin: ['mankeep'],
+        id: location.pathname,      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
+  </body>
+</html>
