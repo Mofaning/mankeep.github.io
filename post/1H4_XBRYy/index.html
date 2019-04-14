@@ -4,7 +4,7 @@
 <meta name="description" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>windows2008r2 换centos | 随然默记</title>
-<link rel="shortcut icon" href="https://mankeep.github.io/favicon.ico?v=1555213671826">
+<link rel="shortcut icon" href="https://mankeep.github.io/favicon.ico?v=1555214611815">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link rel="stylesheet" href="https://mankeep.github.io/styles/main.css">
 
@@ -18,7 +18,7 @@
       <div class="main-content">
         <div class="site-header">
   <a href="https://mankeep.github.io">
-  <img class="avatar" src="https://mankeep.github.io/images/avatar.png?v=1555213671826" alt="">
+  <img class="avatar" src="https://mankeep.github.io/images/avatar.png?v=1555214611815" alt="">
   </a>
   <h1 class="site-title">
     随然默记
@@ -86,24 +86,26 @@
             </div>
             
             <div class="post-content">
-              <p>思路
-备份win所有文件，因为是全盘格式化
-完整下载到本地，并成功在虚拟机搭建，以备出错
-搭建centos 环境，主用用宝塔面板 朋友推荐，为了方便
-宝塔确实好用，基本界面操作，该有的都有了 注意之后网站维护安全方面就行</p>
-<p>备份
-直接把服务器所有文件及数据库打包 丢到网站根目录迅雷下载速读取决于服务器的网速 下载要写全文件名比如：www.www.com/sss/sss.zip  要不然可能出现403 访问错误
-本地搭建
-虚拟机用的Oracle VM VirtualBox 下载地址就是官网</p>
+              <h4 id="思路">思路</h4>
+<p>备份win所有文件，因为是全盘格式化</p>
+<p>完整下载到本地，并成功在虚拟机搭建，以备出错</p>
+<p>搭建centos 环境，主用宝塔面板 朋友推荐，为了方便</p>
+<p>宝塔确实好用，基本界面操作，该有的都有了 注意之后网站维护安全方面就行</p>
+<h4 id="备份">备份</h4>
+<p>直接把服务器所有文件及数据库打包 丢到网站根目录迅雷下载速读取决于服务器的网速 下载要写全文件名比如：<code>www.www.com/sss/sss.zip</code>要不然可能出现403 访问错误</p>
+<h4 id="本地搭建">本地搭建</h4>
+<p>虚拟机用的Oracle VM VirtualBox 下载地址就是官网
+<code>https://www.virtualbox.org/wiki/Downloads</code></p>
 <p>下载centos 7.6
-http://mirrors.163.com/centos/7.6.1810/isos/x86_64/CentOS-7-x86_64-Minimal-1810.iso
+<code>http://mirrors.163.com/centos/7.6.1810/isos/x86_64/CentOS-7-x86_64-Minimal-1810.iso</code>
 遇到问题 不知道是不是笔记本wifi的问题，桥接网络一直连不上 网卡自动无法开启
 可以先用
-ip add 查看是否开启网络 或者ping 一下</p>
+<code>ip add 查看是否开启网络 或者ping 一下</code></p>
 <p>打开网卡命令：
-ifup enp0s3</p>
-<p>正常开启网络 就可以安装宝塔了
-安装套件 相应的配置版本 按照之前的就可以</p>
+<code>ifup enp0s3</code></p>
+<p>正常开启网络 就可以安装宝塔了</p>
+<h4 id="安装套件">安装套件</h4>
+<p>相应的配置版本 按照之前的版本就可以 编译极速看需求，本地选的极速 服务器选的编译，速读快和慢，另外就是稳定性</p>
 <p>数据库这里PHPMyadmin出现了问题，文件超过50m 改了php.ini 上传大小和响应时间，均是无法上传：
 报错：
 502 Bad Gateway</p>
@@ -112,19 +114,19 @@ ifup enp0s3</p>
 <img src="https://mankeep.github.io/post-images/1555195688176.png" alt="">
 然后弃用phpmyadmin改用shh命令行
 进入数据库：
-mysql -uroot -h127.0.0.1 -p
+<code>mysql -uroot -h127.0.0.1 -p</code>
 看一下有哪些库
-show databases;
+<code>show databases;</code>
 进入库
-use  sss库名
+<code>use sss库名</code>
 上传数据库文件
-source 文件路径</p>
-<p>添加网站
-因为我的数据库使用php直接调用所以新建不选建数据库
+<code>source 文件路径</code></p>
+<h4 id="添加网站">添加网站</h4>
+<p>因为我的数据库使用php直接调用所以新建不选建数据库
 根目录和域名写对其他默认就可以</p>
 <p>因为我是本地搭建线上网站，所以域名添加之后要去更改host文件
 打开方式可以在搜索中搜索记事本右键管理员运行 要不然没发修改
-C:\Windows\System32\drivers\etc
+<code>C:\Windows\System32\drivers\etc</code>
 因为是虚拟机所以ip一定要写虚拟机ip 切勿写127.0.0.1
 搞定到这基本上就可以了，其他的就是调试了，没问题就可以直接上手安装服务器了；</p>
 
