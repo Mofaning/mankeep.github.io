@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://mankeep.github.io/favicon.ico?v=1555230096661">
+<link rel="shortcut icon" href="https://mankeep.github.io/favicon.ico?v=1555231752564">
 <link rel="stylesheet" href="https://mankeep.github.io/styles/main.css">
 
 
@@ -35,7 +35,7 @@
   <div class="site-header">
     <div class="left">
       <a href="https://mankeep.github.io">
-        <img class="avatar" src="https://mankeep.github.io/images/avatar.png?v=1555230096661" alt="" width="32px" height="32px">
+        <img class="avatar" src="https://mankeep.github.io/images/avatar.png?v=1555231752564" alt="" width="32px" height="32px">
       </a>
       <a href="https://mankeep.github.io">
         <h1 class="site-title">随然默记</h1>
@@ -147,6 +147,28 @@
 <code>C:\Windows\System32\drivers\etc</code>
 因为是虚拟机所以ip一定要写虚拟机ip 切勿写127.0.0.1
 搞定到这基本上就可以了，其他的就是调试了，没问题就可以直接上手安装服务器了；</p>
+<h4 id="安装后-宝塔需要更改一些内容以便增加服务器安全">安装后 宝塔需要更改一些内容以便增加服务器安全</h4>
+<h5 id="面板设置">面板设置</h5>
+<pre><code class="language-别名：不要用默认的，随便改个自己的，网站名都可以">面板端口：默认全是8888 非常不安全   8888 - 65535之间随便
+安全入口：开始是随机的，虽然很安全，但是不好记啊，改个自己能记住也不要太短的
+域名：这个我加上了，用ip总觉得不得劲，另外域名设置好之后只能用过域名访问，ip就用不了了，也算是增加了安全吧
+IP：这个就算了 除了固定ip都不要去设置这个，动态ip换了就没法登录了
+面板用户：改
+面板密码：改
+FTP端口：改了
+数据库：回收站要记得开
+开启监控：已打开，方便查看负载纪录
+安全：ssh是打开了，之前看到一个帖子说是不建议打开：因为面板已经安装好，后期基本用不到。这个端口很容易被扫描。但是端口是必须要改的
+PING：这个随意，我关掉了，关掉ping对seo没什么影响，只是在黑客在扫ip的时候ping不通的可能就略过了，另外关了这玩意自己也ping不通，有适合测试网站的时候也有影响
+软件安装：
+高防IP，
+七牛云存储，这个还在申请中，据说10g免费，七天备份很方便，
+PHP守护：
+监控PHP-FPM运行状态，防止大批量出现502错误!````
+
+
+
+</code></pre>
 
           </div>
         </div>
