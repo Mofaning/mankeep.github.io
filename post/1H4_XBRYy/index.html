@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://mankeep.github.io/favicon.ico?v=1555233975446">
+<link rel="shortcut icon" href="https://mankeep.github.io/favicon.ico?v=1555234588620">
 <link rel="stylesheet" href="https://mankeep.github.io/styles/main.css">
 
 
@@ -35,7 +35,7 @@
   <div class="site-header">
     <div class="left">
       <a href="https://mankeep.github.io">
-        <img class="avatar" src="https://mankeep.github.io/images/avatar.png?v=1555233975446" alt="" width="32px" height="32px">
+        <img class="avatar" src="https://mankeep.github.io/images/avatar.png?v=1555234588620" alt="" width="32px" height="32px">
       </a>
       <a href="https://mankeep.github.io">
         <h1 class="site-title">随然默记</h1>
@@ -110,17 +110,19 @@
 <p>搭建centos 环境，主用宝塔面板 朋友推荐，为了方便</p>
 <p>宝塔确实好用，基本界面操作，该有的都有了 注意之后网站维护安全方面就行</p>
 <h4 id="备份">备份</h4>
-<p>直接把服务器所有文件及数据库打包 丢到网站根目录迅雷下载速读取决于服务器的网速 下载要写全文件名比如：<code>www.www.com/sss/sss.zip</code>要不然可能出现403 访问错误</p>
+<p>直接把服务器所有文件及数据库打包 丢到网站根目录迅雷下载速读取决于服务器的网速 下载要写全文件名比如：</p>
+<p><code>www.www.com/sss/sss.zip</code></p>
+<p>要不然可能出现403 访问错误</p>
 <h4 id="本地搭建">本地搭建</h4>
-<p>虚拟机用的Oracle VM VirtualBox 下载地址就是官网
-<code>https://www.virtualbox.org/wiki/Downloads</code></p>
-<p>下载centos 7.6
-<code>http://mirrors.163.com/centos/7.6.1810/isos/x86_64/CentOS-7-x86_64-Minimal-1810.iso</code>
-遇到问题 不知道是不是笔记本wifi的问题，桥接网络一直连不上 网卡自动无法开启
-可以先用
-<code>ip add 查看是否开启网络 或者ping 一下</code></p>
-<p>打开网卡命令：
-<code>ifup enp0s3</code></p>
+<p>虚拟机用的Oracle VM VirtualBox 下载地址就是官网</p>
+<p><code>https://www.virtualbox.org/wiki/Downloads</code></p>
+<p>下载centos 7.6</p>
+<p><code>http://mirrors.163.com/centos/7.6.1810/isos/x86_64/CentOS-7-x86_64-Minimal-1810.iso</code></p>
+<p>遇到问题 不知道是不是笔记本wifi的问题，桥接网络一直连不上 网卡自动无法开启</p>
+<p>可以先用</p>
+<p><code>ip add 查看是否开启网络 或者ping 一下</code></p>
+<p>打开网卡命令：</p>
+<p><code>ifup enp0s3</code></p>
 <p>正常开启网络 就可以安装宝塔了</p>
 <h4 id="安装套件">安装套件</h4>
 <p>相应的配置版本 按照之前的版本就可以 编译极速看需求，本地选的极速 服务器选的编译，速读快和慢，另外就是稳定性</p>
@@ -129,24 +131,24 @@
 502 Bad Gateway</p>
 <p><img src="https://mankeep.github.io/post-images/1555195605142.png" alt="">
 <img src="https://mankeep.github.io/post-images/1555195618815.png" alt="">
-<img src="https://mankeep.github.io/post-images/1555195688176.png" alt="">
-然后弃用phpmyadmin改用shh命令行
-进入数据库：
-<code>mysql -uroot -h127.0.0.1 -p</code>
-看一下有哪些库
-<code>show databases;</code>
-进入库
-<code>use sss库名</code>
-上传数据库文件
-<code>source 文件路径</code></p>
+<img src="https://mankeep.github.io/post-images/1555195688176.png" alt=""></p>
+<p>然后弃用phpmyadmin改用shh命令行</p>
+<p>进入数据库：</p>
+<p><code>mysql -uroot -h127.0.0.1 -p</code></p>
+<p>看一下有哪些库</p>
+<p><code>show databases;</code></p>
+<p>进入库</p>
+<p><code>use sss库名</code></p>
+<p>上传数据库文件</p>
+<p><code>source 文件路径</code></p>
 <h4 id="添加网站">添加网站</h4>
-<p>因为我的数据库使用php直接调用所以新建不选建数据库
+<p>我的数据库使用php直接调用所以新建不选建数据库
 根目录和域名写对其他默认就可以</p>
-<p>因为我是本地搭建线上网站，所以域名添加之后要去更改host文件
-打开方式可以在搜索中搜索记事本右键管理员运行 要不然没发修改
-<code>C:\Windows\System32\drivers\etc</code>
-因为是虚拟机所以ip一定要写虚拟机ip 切勿写127.0.0.1
-搞定到这基本上就可以了，其他的就是调试了，没问题就可以直接上手安装服务器了；</p>
+<p>本地搭建线上网站，所以域名添加之后要去更改host文件</p>
+<p>打开方式可以在搜索中搜索记事本右键管理员运行 要不然没发修改</p>
+<p><code>C:\Windows\System32\drivers\etc</code></p>
+<p>因为是虚拟机所以ip一定要写虚拟机ip 切勿写127.0.0.1</p>
+<p>搞定到这基本上就可以了，其他的就是调试了，没问题就可以直接上手安装服务器了；</p>
 <h4 id="安装后-宝塔需要更改一些内容以便增加服务器安全">安装后 宝塔需要更改一些内容以便增加服务器安全</h4>
 <h5 id="面板设置">面板设置</h5>
 <pre><code class="language-别名：不要用默认的，随便改个自己的，网站名都可以">面板端口：默认全是8888 非常不安全   8888 - 65535之间随便
