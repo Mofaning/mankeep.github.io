@@ -1,18 +1,16 @@
-
 <!DOCTYPE html>
 <html>
   <head>
-    
-<meta charset="utf-8" >
+    <meta charset="utf-8" >
 
 <title>常用工具App | 随然默记</title>
 <meta name="description" content="随缘，自然，慢慢记，默默记">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+<link rel="shortcut icon" href="https://mankeep.github.io/favicon.ico?v=1555290254711">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://mankeep.github.io/favicon.ico?v=1555236093663">
+<link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
 <link rel="stylesheet" href="https://mankeep.github.io/styles/main.css">
 
 
@@ -22,89 +20,84 @@
 
   
 
-
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
   </head>
   <body>
-    <div id="app" class="main">
-      <div class="site-header-container">
-  <div class="site-header">
-    <div class="left">
-      <a href="https://mankeep.github.io">
-        <img class="avatar" src="https://mankeep.github.io/images/avatar.png?v=1555236093663" alt="" width="32px" height="32px">
-      </a>
-      <a href="https://mankeep.github.io">
-        <h1 class="site-title">随然默记</h1>
-      </a>
-    </div>
-    <div class="right">
-      <transition name="fade">
-        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
-      </transition>
+  
+    <nav class="navbar border fixed split-nav">
+  <div class="nav-brand">
+    <h3><a href="https://mankeep.github.io">随然默记</a></h3>
+  </div>
+  <div class="collapsible">
+    <input id="collapsible1" type="checkbox" name="collapsible1">
+    <button>
+      <label for="collapsible1">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </label>
+    </button>
+    <div class="collapsible-body">
+      <ul class="inline">
+        
+          <li>
+            
+              <a href="/" class="menu">
+                首页
+              </a>
+            
+          </li>
+        
+          <li>
+            
+              <a href="/archives" class="menu">
+                归档
+              </a>
+            
+          </li>
+        
+          <li>
+            
+              <a href="/tags" class="menu">
+                标签
+              </a>
+            
+          </li>
+        
+          <li>
+            
+              <a href="/post/about" class="menu">
+                关于
+              </a>
+            
+          </li>
+        
+      </ul>
     </div>
   </div>
-</div>
+</nav>
 
-<transition name="fade">
-  <div class="menu-container" style="display: none;" v-show="menuVisible">
-    <div class="menu-list">
-      
-        
-          <a href="/" class="menu purple-link">
-            首页
-          </a>
-        
-      
-        
-          <a href="/archives" class="menu purple-link">
-            归档
-          </a>
-        
-      
-        
-          <a href="/tags" class="menu purple-link">
-            标签
-          </a>
-        
-      
-        
-          <a href="/post/about" class="menu purple-link">
-            关于
-          </a>
-        
-      
-    </div>
-  </div>
-</transition>
-
-
-      <div class="content-container">
-        <div class="post-detail">
-          
-            <div class="feature-container" style="background-image: url('https://mankeep.github.io/post-images/chang-yong-gong-ju-app.png')">
-            </div>
-          
-          <h2 class="post-title">常用工具App</h2>
-          <div class="post-info post-detail-info">
-            <span><i class="icon-calendar-outline"></i> 2019-03-14</span>
-            
-              <span>
-                <i class="icon-pricetags-outline"></i>
-                
-                  <a href="https://mankeep.github.io/tag/app">
-                    App
-                    
-                  </a>
-                
-              </span>
-            
-          </div>
-          <div class="post-content">
-            <h1 id="笔记类">笔记类：</h1>
+    <div id="top" class="row site">
+      <div class="sm-12 md-8 col">
+        <div class="paper">
+          <article class="article">
+            <h1>常用工具App</h1>
+            <p class="article-meta">
+              2019-03-14
+              
+                <a href="https://mankeep.github.io/tag/app" class="badge secondary">
+                  App
+                </a>
+              
+            </p>
+            <img src="https://mankeep.github.io/post-images/chang-yong-gong-ju-app.png" alt="常用工具App">
+            <div class="post-content">
+              <h1 id="笔记类">笔记类：</h1>
 <h1 id="印象笔记网盘类">印象笔记
 网盘类：</h1>
 <h1 id="onedrive坚果云百度网盘快捷操作类">onedrive
@@ -149,58 +142,117 @@ kindle  +设备
 目前已卸：知乎，好奇心，V2EX 、澎湃新闻、全部通过网页端访问</p>
 <p>还有在补充了（感觉特么写的好乱）</p>
 
-          </div>
+            </div>
+          </article>
         </div>
-
-        
-          <div class="next-post">
-            <a class="purple-link" href="https://mankeep.github.io/post/da-jian-hve-notes-ji-lu">
-              <h3 class="post-title">
-                下一篇：搭建Hve Notes纪录
-              </h3>
-            </a>
-          </div>
+        <div class="paper" data-aos="fade-in">
           
+            <div class="next-post">
+              <div class="next">
+                下一篇
+              </div>
+              <a href="https://mankeep.github.io/post/da-jian-hve-notes-ji-lu">
+                <h3 class="post-title">
+                  搭建Hve Notes纪录
+                </h3>
+              </a>
+            </div>
+          
+        </div>
+        
+          
+            <div class="paper" data-aos="fade-in">
+              <div id="gitalk-container"></div>
+            </div>
+          
+
+          
+        
       </div>
 
+      <div class="sm-12 md-4 col sidebar">
+  <div class="paper info-container">
+    <img src="https://mankeep.github.io/images/avatar.png?v=1555290254711" class="no-responsive avatar">
+    <div class="text-muted">随缘，自然，慢慢记，默默记</div>
+    <div class="social-container">
       
         
-          <div id="gitalk-container"></div>
-        
-
+      
         
       
-
-      <div class="site-footer">
-  <div class="slogan">随缘，自然，慢慢记，默默记</div>
-  <div class="social-container">
-    
+        
       
-    
+        
       
-    
+        
       
-    
-      
-    
-      
-    
+    </div>
   </div>
-  Powered by Gridea © 2019 - ？ Copyright Suiran. All Rights Reserved.
+  <div class="paper">
+    <div class="sidebar-title">
+      最新文章
+    </div>
+    <div class="row">
+      <ul>
+        
+          
+            <li>
+              <a href="https://mankeep.github.io/post/1H4_XBRYy">纪录更换服务器 Win转Centos7</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://mankeep.github.io/post/chang-yong-gong-ju-app">常用工具App</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://mankeep.github.io/post/da-jian-hve-notes-ji-lu">搭建Hve Notes纪录</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://mankeep.github.io/post/about">关于</a>
+            </li>
+          
+        
+      </ul>
+    </div>
+  </div>
+  <div class="paper">
+    <div class="sidebar-title">
+      标签列表
+    </div>
+    <div class="row">
+      
+        <a href="https://mankeep.github.io/tag/server" class="badge ">
+          服务器
+        </a>
+      
+        <a href="https://mankeep.github.io/tag/app" class="badge ">
+          App
+        </a>
+      
+    </div>
+  </div>
+  <div class="paper">
+    Powered by Gridea © 2019 - ？ Copyright Suiran. All Rights Reserved.
+  </div>
 </div>
 
 
     </div>
-    <script type="application/javascript">
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
 
 hljs.initHighlightingOnLoad()
-
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
 
 </script>
 
