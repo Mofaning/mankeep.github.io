@@ -7,115 +7,64 @@
 <meta name="description" content="随缘，自然，慢慢记，默默记">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="shortcut icon" href="https://mankeep.github.io/favicon.ico?v=1555290254711">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
+<link rel="shortcut icon" href="https://mankeep.github.io/favicon.ico?v=1555290479527">
 <link rel="stylesheet" href="https://mankeep.github.io/styles/main.css">
 
 
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
+
   </head>
   <body>
-    <nav class="navbar border fixed split-nav">
-  <div class="nav-brand">
-    <h3><a href="https://mankeep.github.io">随然默记</a></h3>
-  </div>
-  <div class="collapsible">
-    <input id="collapsible1" type="checkbox" name="collapsible1">
-    <button>
-      <label for="collapsible1">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </label>
-    </button>
-    <div class="collapsible-body">
-      <ul class="inline">
-        
-          <li>
-            
-              <a href="/" class="menu">
-                首页
-              </a>
-            
-          </li>
-        
-          <li>
-            
-              <a href="/archives" class="menu">
-                归档
-              </a>
-            
-          </li>
-        
-          <li>
-            
-              <a href="/tags" class="menu">
-                标签
-              </a>
-            
-          </li>
-        
-          <li>
-            
-              <a href="/post/about" class="menu">
-                关于
-              </a>
-            
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-</nav>
+    <div id="app" class="main">
 
-    <div id="top" class="row site">
-      <div class="sm-12 md-8 col">
-        <div class="paper">
-          <h2 class="current-tag">标签: 服务器</h2>
-          
-  <article class="article">
-    <h2 class="article-title">
-      <a href="https://mankeep.github.io/post/1H4_XBRYy">纪录更换服务器 Win转Centos7</a>
-    </h2>
-    <p class="article-meta">
-      2019-04-13
-      
-        <a href="https://mankeep.github.io/tag/server" class="badge success">
-          服务器
-        </a>
-      
-    </p>
-    <p class="text-lead">
-      
-    </p>
-    <div class="row">
-      <a href="https://mankeep.github.io/post/1H4_XBRYy" class="readmore-link">
-        <button>
-          Read More
-        </button>
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://mankeep.github.io">
+        <img src="https://mankeep.github.io/images/avatar.png?v=1555290479527" class="site-logo">
+        <h1 class="site-title">随然默记</h1>
       </a>
-    </div>
-  </article>
-
-
-        </div>
-        <div class="row flex-edges">
-  
-  
-</div>
-
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
       </div>
-      <div class="sm-12 md-4 col sidebar">
-  <div class="paper info-container">
-    <img src="https://mankeep.github.io/images/avatar.png?v=1555290254711" class="no-responsive avatar">
-    <div class="text-muted">随缘，自然，慢慢记，默默记</div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
     <div class="social-container">
       
         
@@ -129,62 +78,48 @@
         
       
     </div>
-  </div>
-  <div class="paper">
-    <div class="sidebar-title">
-      最新文章
+    <div class="site-description">
+      随缘，自然，慢慢记，默默记
     </div>
-    <div class="row">
-      <ul>
-        
-          
-            <li>
-              <a href="https://mankeep.github.io/post/1H4_XBRYy">纪录更换服务器 Win转Centos7</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://mankeep.github.io/post/chang-yong-gong-ju-app">常用工具App</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://mankeep.github.io/post/da-jian-hve-notes-ji-lu">搭建Hve Notes纪录</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://mankeep.github.io/post/about">关于</a>
-            </li>
-          
-        
-      </ul>
+    <div class="site-footer">
+      Powered by Gridea © 2019 - ？ Copyright Suiran. All Rights Reserved.
     </div>
-  </div>
-  <div class="paper">
-    <div class="sidebar-title">
-      标签列表
-    </div>
-    <div class="row">
-      
-        <a href="https://mankeep.github.io/tag/server" class="badge warning">
-          服务器
-        </a>
-      
-        <a href="https://mankeep.github.io/tag/app" class="badge secondary">
-          App
-        </a>
-      
-    </div>
-  </div>
-  <div class="paper">
-    Powered by Gridea © 2019 - ？ Copyright Suiran. All Rights Reserved.
   </div>
 </div>
 
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <h2 class="current-tag">标签: 服务器</h2>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://mankeep.github.io/post/1H4_XBRYy">
+                  <h2 class="post-title">纪录更换服务器 Win转Centos7</h2>
+                </a>
+                <div class="post-date">
+                  2019-04-13
+                </div>
+                <div class="post-abstract">
+                  
+                </div>
+              </div>
+              
+                <a class="right" href="https://mankeep.github.io/post/1H4_XBRYy">
+                  <div class="feature-container" style="background-image: url('https://mankeep.github.io/post-images/1H4_XBRYy.png')">
+                  </div>
+                </a>
+              
+            </article>
+          
+
+          <div class="pagination-container">
+  
+  
+</div>
+
+        </div>
+      </div>
     </div>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -194,6 +129,13 @@
 AOS.init();
 
 hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
 
 </script>
 
