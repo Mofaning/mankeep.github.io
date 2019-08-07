@@ -1,156 +1,132 @@
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8" />
-<meta name="description" content="" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="robots" content="all,follow">
-<meta name="googlebot" content="index,follow,snippet,archive">
+  <head>
+    <meta charset="utf-8" >
+
 <title>搭建Hve Notes纪录 | 随然默记</title>
-<link rel="shortcut icon" href="https://mankeep.github.io/favicon.ico?v=1555901745938">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-<link rel="stylesheet" href="https://mankeep.github.io/styles/main.css" type='text/css' media='all'>
+<meta name="description" content="随缘，自然，慢慢记，默默记">
 
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://mankeep.github.io/favicon.ico?v=1565149587327">
+<link rel="stylesheet" href="https://mankeep.github.io/styles/main.css">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
 
+  </head>
+  <body>
+    <div id="app" class="main">
 
-</head>
-<body class="home blog ct-body standard">
-<div id="overflow-container" class="overflow-container">
-  <a class="skip-content" href="#main">Skip to content</a>
-  <header id="site-header" class="site-header" role="banner">
-    <div class='top-navigation top-navigation-important'>
-        <div class='container'>
-            <div id="menu-secondary" class="menu-container menu-secondary" role="navigation">
-                <button id="toggle-secondary-navigation" class="toggle-secondary-navigation"><i class="fa fa-plus"></i></button>
-                <div class="menu">
-                    <ul id="menu-secondary-items" class="menu-secondary-items">
-                        
-                        
-                            
-                        <li id="menu-item" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item">
-                            <a href="https://mankeep.github.io/tag/server">服务器</a>
-                        </li>
-                            
-                        
-                            
-                        <li id="menu-item" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item">
-                            <a href="https://mankeep.github.io/tag/app">App</a>
-                        </li>
-                            
-                        
-                    </ul>
-                </div>
-            </div>
-            <ul class="social-media-icons">
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-            </ul>
-        </div>
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://mankeep.github.io">
+        <img src="https://mankeep.github.io/images/avatar.png?v=1565149587327" class="site-logo">
+        <h1 class="site-title">随然默记</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
     </div>
-
-    <div class="container">
-        <div id="title-info" class="title-info">
-            <div id='site-title' class='site-title'>
-                <a href="/https://mankeep.github.io">  随然默记 </a>
-            </div>
-        </div>
-        <button id="toggle-navigation" class="toggle-navigation">
-            <i class="fa fa-bars"></i>
-        </button>
-        <div id="menu-primary-tracks" class="menu-primary-tracks"></div>
-        <div id="menu-primary" class="menu-container menu-primary" role="navigation">
-            <p class="site-description">随缘，自然，慢慢记，默默记</p>
-            <div class="menu">
-                <ul id="menu-primary-items" class="menu-primary-items">
-                     
-                        
-                            <li id="menu-item" class='menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item'>
-                                <a href="/">首页</a>
-                            </li>
-                        
-                    
-                        
-                            <li id="menu-item" class='menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item'>
-                                <a href="/archives">归档</a>
-                            </li>
-                        
-                    
-                        
-                            <li id="menu-item" class='menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item'>
-                                <a href="/tags">标签</a>
-                            </li>
-                        
-                    
-                        
-                            <li id="menu-item" class='menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item'>
-                                <a href="/post/about">关于</a>
-                            </li>
-                        
-                    
-                </ul>
-            </div>
-        </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
     </div>
-
-
-</header>
-
-  <div id="main" class="main" role="main">
-    <div id="loop-container" class="loop-container">
-      <div class="post type-post status-publish format-standard has-post-thumbnail hentry category-design tag-design tag-standard-2 tag-tagalicious tag-travel entry full-without-featured odd excerpt-1">
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
         
-          <div class='featured-image lazy lazy-bg-image' data-background="https://mankeep.github.io/post-images/da-jian-hve-notes-ji-lu.png">
-          </div>
+      
         
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      随缘，自然，慢慢记，默默记
+    </div>
+    <div class="site-footer">
+      Powered by Gridea © 2019 - ？ Copyright Suiran. All Rights Reserved.
+    </div>
+  </div>
+</div>
 
-        <div class="entry-meta">
-          <span class="date">· 2019-03-13 ·</span> <span> / </span>
-          <span class="author">
-            <a href="https://mankeep.github.io" title="" rel="author"> Powered by Gridea © 2019 - ？ Copyright Suiran. All Rights Reserved.</a>
-          </span>
-          
-        </div>
-        <div class='entry-header'>
-          <h1 class='entry-title'>搭建Hve Notes纪录</h1>
-        </div>
-        <div class="entry-container">
-          <div class="entry-content">
-            <article>
-              <p><strong>起源</strong>
-一直想找一个能搭建在github上的博客程序，了解过hexo、jekyll等，奈何技术实在不堪一提，迟迟没能如愿；
-机缘巧合在小众上看到hve notes，安装简单，操作熟练，和vnote很像，并且支持Markdown语法功能如下：![]<img src="https://s2.ax1x.com/2019/03/14/AA6qRe.png" alt="AA6qRe.png">
-<strong>安装</strong>
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">搭建Hve Notes纪录</h2>
+            <div class="post-date">2019-03-13</div>
+            
+              <div class="feature-container" style="background-image: url('https://mankeep.github.io/post-images/da-jian-hve-notes-ji-lu.png')">
+              </div>
+            
+            <div class="post-content">
+              <p><strong>起源</strong><br>
+一直想找一个能搭建在github上的博客程序，了解过hexo、jekyll等，奈何技术实在不堪一提，迟迟没能如愿；<br>
+机缘巧合在小众上看到hve notes，安装简单，操作熟练，和vnote很像，并且支持Markdown语法功能如下：![]<img src="https://s2.ax1x.com/2019/03/14/AA6qRe.png" alt="AA6qRe.png"><br>
+<strong>安装</strong><br>
 安装方面很常规，作者已经贴了：<a href="%E8%B6%85%E9%93%BE%E6%8E%A5%E5%9C%B0%E5%9D%80%22https://fehey.com/post/hve-notes-start/%22">hve notes安装</a></p>
 <blockquote>
-<p>如果你使用过 Hexo 等工具基于 Github 做个人博客，那么恭喜你，你可以很轻松的上手使用Hve Notes
+<p>如果你使用过 Hexo 等工具基于 Github 做个人博客，那么恭喜你，你可以很轻松的上手使用Hve Notes<br>
 如果你以前没有使用过，那么希望这篇文章可以帮助你顺利的完成博客搭建。话不多说，Let's Go!</p>
 </blockquote>
-<p><strong>准备工作</strong>
+<p><strong>准备工作</strong><br>
 由于 Github 和 Coding 的步骤差不多，下面就以 Github 为例来操作一下</p>
 <p>必须：确保你已经安装过 Git 和 Hve Notes</p>
 <p>首先你需要一个 Github 账号，如果没有的话，快去注册一个吧！</p>
-<p>登录 Github，然后进入到 这里 创建一个 Token，勾选上 repo 的相关权限即可，下面是对应的截图示例：
+<p>登录 Github，然后进入到 这里 创建一个 Token，勾选上 repo 的相关权限即可，下面是对应的截图示例：<br>
 <img src="https://mankeep.github.io/post-images/1552462219160.png" alt=""></p>
 <p>生成之后你可以复制 Token 到你可以再次找到的某个地方，因为一旦你关了这个网页就再也不会看到它了，稍后会在软件中使用</p>
 <p><img src="https://mankeep.github.io/post-images/1552462237529.png" alt=""></p>
 <p>接下来你需要创建一个仓库，用来存放博客构建后的静态文件。我们建议你创建仓库名为 用户名.github.io 的仓库，因为 Github 会默认将此仓库设置成 Github Pages 可访问类型，若不是用此命名的仓库，则不能默认使用 Github Pages，所以请认真确认。例如我的 Github 用户名为 EryouHao，则仓库名为 EryouHao.github.io。使用这种方式还有一个好处是，在没有自定义域名的情况下，使你的博客域名更短。当然如果想使用其他仓库来存放博客静态文件的话，也不是不可以，只不过，存放之后，若没有设置自定义域名，则访问地址将变成 https://用户名.github.io/blog （blog 为仓库名）这种二级目录的形式。</p>
-<p><strong>开始使用</strong>
+<p><strong>开始使用</strong><br>
 打开 Hve Notes 进入到配置页面，然后按照下面示例，输入相关配置并保存</p>
 <p><img src="https://mankeep.github.io/post-images/1552462266305.png" alt=""></p>
 <p>在不开启文章评论的情况下，到此为止，你已经可以点击预览，点击同步进行博客部署啦，快去试试看吧！（当然在不同步的情况下）</p>
-<p><strong>开启文章评论</strong>
+<p><strong>开启文章评论</strong><br>
 Hve Notes 目前提供了 Gitalk 和 Disqus 两种评论系统支持。</p>
 <p>Gitalk 是一个基于 GitHub Issue 和 Preact 开发的评论插件。如果你博客使用的是 Gitalk 的话，建议你可以选择 Gitalk 来作为评论插件。</p>
 <p>你可以按照 Gitalk 的文档 进行相关字段配置，或者按照下面的步骤操作。</p>
@@ -161,135 +137,75 @@ Hve Notes 目前提供了 Gitalk 和 Disqus 两种评论系统支持。</p>
 <p>接下来就可以去应用里面填写对应的信息，并开启评论</p>
 <p><img src="https://mankeep.github.io/post-images/1552462321297.png" alt=""></p>
 <p>这样评论插件就设置好了，在预览时会在文章页显示评论模块，但不会显示具体的评论信息，因为这个是本地预览，而 Github OAuth 设置的域名为线上的域名。待博客同步到线上时就可以显示啦！</p>
-<p>快快开始你的创作吧！
-<strong>遇到的一些问题整理：</strong>
-自定义仓库是可以的但是还需要额外设置 github pages 选项
-我直接用的用户名，由作者协助帮忙弄的所以没设置github pages
-关于评论方面：
-如果自定义了域名，需要把url都填写成指向域名（注：hvenotes仓库是不需要的，直接写仓库地址）
-关于备份：
+<p>快快开始你的创作吧！<br>
+<strong>遇到的一些问题整理：</strong><br>
+自定义仓库是可以的但是还需要额外设置 github pages 选项<br>
+我直接用的用户名，由作者协助帮忙弄的所以没设置github pages<br>
+关于评论方面：<br>
+如果自定义了域名，需要把url都填写成指向域名（注：hvenotes仓库是不需要的，直接写仓库地址）<br>
+关于备份：<br>
 我选择了坚果云直接同步文件夹（默认位置在：文档下的hve-notes）</p>
 
-            </article>
+            </div>
+            
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
           </div>
-          <div class='entry-meta-bottom'>
-            <div class="entry-categories">
-              <p>
-                <span>Categories</span>
-                
-                  
-                    
-                  <a href="https://mankeep.github.io/tag/server" title="View all posts in 服务器">服务器</a>
-                    
-                    
-                    
-                  <a href="https://mankeep.github.io/tag/app" title="View all posts in App">App</a>
-                    
-                    
-                <!--<a href="/blog/categories/github" title="View all posts in Github">Github</a>
-                <a href="/blog/categories/ssh" title="View all posts in SSH">SSH</a>
-                <a href="/blog/categories/apidoc" title="View all posts in apidoc">apidoc</a>
-                <a href="/blog/categories/code" title="View all posts in code">code</a>
-                <a href="/blog/categories/markdown" title="View all posts in markdown">markdown</a>
-                <a href="/blog/categories/snap" title="View all posts in snap">snap</a>
-                <a href="/blog/categories/snap-store" title="View all posts in snap store">snap store</a>-->
-              </p>
-            </div>
-            <div class="entry-tags">
-              <p><span>Tags</span>
-              </p>
-            </div>
-          </div>
-          <div class="author-meta">
-            <div class="author">
-              <img alt='' src="https://mankeep.github.io/images/avatar.png?v=1555901745938" class='avatar avatar-72 photo' height='72' width='72'>
-              <span><a href='https://mankeep.github.io'>随然默记</a> </span>
-            </div>
-            <div class="bio">
-              <p>随然默记</p>
-              
-                
-              
-                
-              
-                
-              
-                
-              
-                
-              
-            </div>
-          </div>
+
         </div>
-          
       </div>
-      <section id="comments" class="comments">
-        
-          
-            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    </div>
 
-<div id="gitalk-container"></div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
-<script>
+<script type="application/javascript">
 
-  var gitalk = new Gitalk({
-    clientID: '0239274251b859f63737',
-    clientSecret: '777a65a6c1e9c3e94b8058d503450a5141660386',
-    repo: 'mankeep.github.io',
-    owner: 'mankeep',
-    admin: ['mankeep'],
-    id: location.pathname,      // Ensure uniqueness and length less than 50
-    distractionFreeMode: false  // Facebook-like distraction free mode
-  })
+AOS.init();
 
-  gitalk.render('gitalk-container')
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
 
 </script>
 
-          
 
-          
-        
-      </section>
-    </div>
-  </div>
+  
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
 
-  <footer id="site-footer" class="site-footer" role="contentinfo">
-    <h1>
-        <a href="https://mankeep.github.io"> 随然默记 </a>
-    </h1>
-    <p class="site-description">随缘，自然，慢慢记，默默记</p>
-    <div id="menu-footer" class="menu-container menu-footer" role="navigation">
-        <div class="menu">
-            <ul id="menu-footer-items" class="menu-footer-items">
-            </ul>
-        </div>
-    </div>
-    <ul class="social-media-icons">
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-    </ul>
-    <div class="design-credit">
-        <p>Powered by Gridea © 2019 - ？ Copyright Suiran. All Rights Reserved.</p>
-    </div>
-</footer>
-<script>
-    hljs.initHighlightingOnLoad()
-</script>
-<script src="https://mankeep.github.io/media/scripts/lib/jquery.min.js"></script>
-<script src="https://mankeep.github.io/media/scripts/lib/jquerymigrate.js"></script>
-<script src="https://mankeep.github.io/media/scripts/lib/production.min.js"></script>
-</div>
-</body>
+      var gitalk = new Gitalk({
+        clientID: '0239274251b859f63737',
+        clientSecret: '777a65a6c1e9c3e94b8058d503450a5141660386',
+        repo: 'mankeep.github.io',
+        owner: 'mankeep',
+        admin: ['mankeep'],
+        id: location.pathname,      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
+  </body>
 </html>
-

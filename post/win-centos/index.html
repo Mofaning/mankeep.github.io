@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>纪录更换服务器 Win转Centos7 | 随然默记</title>
+<meta name="description" content="随缘，自然，慢慢记，默默记">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://mankeep.github.io/favicon.ico?v=1565149587327">
+<link rel="stylesheet" href="https://mankeep.github.io/styles/main.css">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://mankeep.github.io">
+        <img src="https://mankeep.github.io/images/avatar.png?v=1565149587327" class="site-logo">
+        <h1 class="site-title">随然默记</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      随缘，自然，慢慢记，默默记
+    </div>
+    <div class="site-footer">
+      Powered by Gridea © 2019 - ？ Copyright Suiran. All Rights Reserved.
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">纪录更换服务器 Win转Centos7</h2>
+            <div class="post-date">2019-04-13</div>
+            
+              <div class="feature-container" style="background-image: url('https://mankeep.github.io/post-images/win-centos.png')">
+              </div>
+            
+            <div class="post-content">
+              <h3 id="windows-2008-r2-换-centos-7">Windows 2008 r2  换 Centos 7</h3>
+<h4 id="思路">思路</h4>
+<p>备份win所有文件，因为是全盘格式化</p>
+<p>完整下载到本地，并成功在虚拟机搭建，以备出错</p>
+<p>搭建centos 环境，主用宝塔面板 朋友推荐，为了方便</p>
+<p>宝塔确实好用，基本界面操作，该有的都有了 注意之后网站维护安全方面就行</p>
+<h4 id="备份">备份</h4>
+<p>直接把服务器所有文件及数据库打包 丢到网站根目录迅雷下载速读取决于服务器的网速 下载要写全文件名比如：</p>
+<p><code>www.www.com/sss/sss.zip</code></p>
+<p>要不然可能出现403 访问错误</p>
+<h4 id="本地搭建">本地搭建</h4>
+<p>虚拟机用的Oracle VM VirtualBox 下载地址就是官网</p>
+<p><code>https://www.virtualbox.org/wiki/Downloads</code></p>
+<p>下载centos 7.6</p>
+<p><code>http://mirrors.163.com/centos/7.6.1810/isos/x86_64/CentOS-7-x86_64-Minimal-1810.iso</code></p>
+<p>遇到问题 不知道是不是笔记本wifi的问题，桥接网络一直连不上 网卡自动无法开启</p>
+<p>可以先用</p>
+<p><code>ip add 查看是否开启网络 或者ping 一下</code></p>
+<p>打开网卡命令：</p>
+<p><code>ifup enp0s3</code></p>
+<p>正常开启网络 就可以安装宝塔了</p>
+<h4 id="安装套件">安装套件</h4>
+<p>相应的配置版本 按照之前的版本就可以 编译极速看需求，本地选的极速 服务器选的编译，速读快和慢，另外就是稳定性</p>
+<p>数据库这里PHPMyadmin出现了问题，文件超过50m 改了php.ini 上传大小和响应时间，均是无法上传：<br>
+报错：<br>
+502 Bad Gateway</p>
+<p><img src="https://mankeep.github.io/post-images/1555195605142.png" alt=""></p>
+<p><img src="https://mankeep.github.io/post-images/1555195618815.png" alt=""></p>
+<p><img src="https://mankeep.github.io/post-images/1555195688176.png" alt=""></p>
+<p>然后弃用phpmyadmin改用shh命令行</p>
+<p>进入数据库：</p>
+<p><code>mysql -uroot -h127.0.0.1 -p</code></p>
+<p>看一下有哪些库</p>
+<p><code>show databases;</code></p>
+<p>进入库</p>
+<p><code>use sss库名</code></p>
+<p>上传数据库文件</p>
+<p><code>source 文件路径</code></p>
+<h4 id="添加网站">添加网站</h4>
+<p>我的数据库使用php直接调用所以新建不选建数据库<br>
+根目录和域名写对其他默认就可以</p>
+<p>本地搭建线上网站，所以域名添加之后要去更改host文件</p>
+<p>打开方式可以在搜索中搜索记事本右键管理员运行 要不然没发修改</p>
+<p><code>C:\Windows\System32\drivers\etc</code></p>
+<p>因为是虚拟机所以ip一定要写虚拟机ip 切勿写成127.0.0.1</p>
+<p>搞定到这基本上就可以了，其他的就是调试了，没问题就可以直接上手安装服务器了；</p>
+<h4 id="安装后-宝塔需要更改一些内容以便增加服务器安全">安装后 宝塔需要更改一些内容以便增加服务器安全</h4>
+<h5 id="面板设置">面板设置</h5>
+<p>别名：不要用默认的，随便改个自己的，网站名都可以</p>
+<p>面板端口：默认全是8888 非常不安全   8888 - 65535之间随便</p>
+<p>安全入口：开始是随机的，虽然很安全，但是不好记啊，改个自己能记住也不要太短的</p>
+<p>域名：这个我加上了，用ip总觉得不得劲，另外域名设置好之后只能用过域名访问，ip就用不了了，也算是增加了安全吧</p>
+<p>IP：这个就算了 除了固定ip都不要去设置这个，动态ip换了就没法登录了</p>
+<p>面板用户：改</p>
+<p>面板密码：改</p>
+<p>FTP端口：改了</p>
+<p>数据库：回收站要记得开</p>
+<p>开启监控：已打开，方便查看负载纪录</p>
+<p>安全：ssh是打开了，之前看到一个帖子说是不建议打开：因为面板已经安装好，后期基本用不到。这个端口很容易被扫<br>
+描。但是端口是必须要改的</p>
+<p>PING：这个随意，我关掉了，关掉ping对seo没什么影响，只是在黑客在扫ip的时候ping不通的可能就略过了，另外关了这玩意自己也ping不通，有适合测试网站的时候也有影响</p>
+<p>软件安装：<br>
+高防IP，<br>
+七牛云存储，这个还在申请中，据说10g免费，七天备份很方便，<br>
+PHP守护：<br>
+监控PHP-FPM运行状态，防止大批量出现502错误!</p>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://mankeep.github.io/tag/server" class="tag">
+                    服务器
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://mankeep.github.io/post/chang-yong-gong-ju-app">
+                  <h3 class="post-title">
+                    常用工具App
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+  
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '0239274251b859f63737',
+        clientSecret: '777a65a6c1e9c3e94b8058d503450a5141660386',
+        repo: 'mankeep.github.io',
+        owner: 'mankeep',
+        admin: ['mankeep'],
+        id: location.pathname,      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
+  </body>
+</html>
