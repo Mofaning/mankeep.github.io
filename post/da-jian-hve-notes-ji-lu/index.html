@@ -1,60 +1,86 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-	<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,minimal-ui" />
-    <title>搭建Hve Notes纪录 | 随然默记</title>
-<link rel='stylesheet' id='puma-css'  href='https://mankeep.github.io/styles/main.css' type='text/css' media='screen' />
-<link rel='stylesheet' id='puma-css'  href='https://at.alicdn.com/t/font_1306644_jwtuc2zzbrd.css' media='screen' />
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
-<script type='text/javascript' src='https://mankeep.github.io/media/scripts/jquery.js'></script>
-<script type='text/javascript' src='https://mankeep.github.io/media/scripts/jquery-migrate.min.js'></script>
-        <script src="https://cdn.bootcss.com/highlight.js/9.15.10/highlight.min.js"></script>
-         <script >hljs.initHighlightingOnLoad();</script>
-         
-</head>
-<body class="single single-post postid-3788 single-format-standard">
-	<!--加入跟随滑动的顶部-->
-	<header id="masthead" class="site-header" role="banner">
-		<div class="site-branding">
-			<h1 class="site-title">
-				<a href="https://mankeep.github.io" title="随然默记">随然默记</a>
-			</h1>
-		</div>
+ <head>
+     <meta charset="utf-8" />
+  <title>搭建Hve Notes纪录 | 随然默记</title>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+  <link rel="stylesheet" href="https://mankeep.github.io/styles/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+   <script src="https://cdn.staticfile.org/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+ </head>
+ <body>
+     <div class="sidebar animated fadeInDown">
+   <div class="logo-title">
+    <div class="title">
+     <img src="https://mankeep.github.io/images/avatar.png?v=1573022738715" style="width:127px;" />
 
-		<a class="primary-nav-trigger" href="javascript:void(0)">
-			<span class="menu-icon"></span>
-		</a>
-		
-	</header>
-		<div class="site-navigation-wrapper">
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<ul class="primary-nav">
-                    
-				<li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a title="首页" href="/">首页</a></li>
-                
-				<li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a title="归档" href="/archives">归档</a></li>
-                
-				<li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a title="标签" href="/tags">标签</a></li>
-                
-				<li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a title="关于" href="/post/about">关于</a></li>
-                
-	
-			</ul>
-		</nav>			
-	</div>
-	<!--跟随滑动的顶部结束-->
-	<div class="surface-content">    <main class="main-content">
-        <section class="section-body">
-                            <header class="section-header u-textAlignCenter">
-                    <h2 class="grap--h2">搭建Hve Notes纪录</h2>
-                    <div class="block-postMetaWrap">
-                        <time>2019-03-13</time>
-                    </div>
-                </header>
-                <div class="grap">
-					
-					<p><strong>起源</strong><br>
+     <div class="description">
+      <p>随缘，自然，慢慢记，默默记</p>
+     </div>
+    </div>
+   </div>
+   <ul class="social-links">
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+   </ul>
+   <div class="footer">
+    <div class="by_farbox">
+   Suiran moji  2019 - ？ Tks Gridea
+    </div>
+    
+
+    </div>
+   </div>
+  </div>
+  <div class="main">
+     <div class="page-top animated fadeInDown">
+    <div class="nav">
+    
+     <li><a  href="/">首页</a></li>
+
+     <li><a  href="/archives">归档</a></li>
+
+     <li><a  href="/tags">标签</a></li>
+
+     <li><a  href="/post/about">关于</a></li>
+
+    </div>
+    <div class="information">
+     <div class="back_btn">
+      <li><a class="fa fa-chevron-left" onclick="window.history.go(-1)"> </a></li>
+     </div>
+    </div>
+   </div>
+   <div class="autopagerize_page_element">
+    <div class="content">
+     <div class="post-page">
+      <div class="post animated fadeInDown">
+       <div class="post-title">
+        <h3><a>搭建Hve Notes纪录</a></h3>
+       </div>
+       <div class="post-content">
+        <p><strong>起源</strong><br>
 一直想找一个能搭建在github上的博客程序，了解过hexo、jekyll等，奈何技术实在不堪一提，迟迟没能如愿；<br>
 机缘巧合在小众上看到hve notes，安装简单，操作熟练，和vnote很像，并且支持Markdown语法功能如下：![]<img src="https://s2.ax1x.com/2019/03/14/AA6qRe.png" alt="AA6qRe.png"><br>
 <strong>安装</strong><br>
@@ -97,56 +123,46 @@ Hve Notes 目前提供了 Gitalk 和 Disqus 两种评论系统支持。</p>
 关于备份：<br>
 我选择了坚果云直接同步文件夹（默认位置在：文档下的hve-notes）</p>
 
-                </div>
-
-                <div class="post--keywords" itemprop="keywords">
-					          </div>
-
-
-
-                      </section>
-    </main>
-</div>
-	<footer class="site-footer u-textAlignCenter">
-    	<div class="footer-branding">
-            <a href="https://mankeep.github.io" title="随然默记">随然默记</a>
-									
-			         </div>
-		 <hr />
-		 <div class="social-links">
-		                       
-                            
-                           
-                            
-                           
-                            
-                           
-                            
-                           
-                            
-                           
-                            
-                           
-                            
-                           
-                            
-                           
-                            
-                           
-                            
-                           
-                            
-                           
-                            
-                           
-				</div>
-        <div class="footer-copy">
-                Suiran moji  2019 - ？ Tks Gridea
+       </div>
+       <div class="post-footer">
+        <div class="meta">
+         <div class="info">
+          <i class="fa fa-sun-o"></i>
+          <span class="date">2019-03-13</span>
+          <i class="fa fa-tag"></i>
+          
+         </div>
         </div>
+       </div>
+      </div>
+      <div class="share">
+       <div class="evernote">
+        <a class="fa fa-bookmark" href="javascript:(function(){EN_CLIP_HOST='http://www.evernote.com';try{var%20x=document.createElement('SCRIPT');x.type='text/javascript';x.src=EN_CLIP_HOST+'/public/bookmarkClipper.js?'+(new%20Date().getTime()/100000);document.getElementsByTagName('head')[0].appendChild(x);}catch(e){location.href=EN_CLIP_HOST+'/clip.action?url='+encodeURIComponent(location.href)+'&amp;title='+encodeURIComponent(document.title);}})();" ref="nofollow" target="_blank"></a>
+       </div>
+       <div class="weibo">
+        <a class="fa fa-weibo" href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&amp;title=',e(d.title),'&amp;appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));"></a>
+       </div>
+       <div class="twitter">
+        <a class="fa fa-twitter" href="http://twitter.com/home?status=,https://mankeep.github.io/post/da-jian-hve-notes-ji-lu,;"></a>
+       </div>
+      </div>
+      <div class="pagination">
+       <ul class="clearfix">
 
-    </footer>
-	<div class="back-to-top u-hide" onclick="backToTop();"><i class="iconfont icon-xiangshang"></i></div>
+        <li class="pre pagbuttons"><a class="btn" role="navigation" href="https://mankeep.github.io/post/chang-yong-gong-ju-app" title="常用工具App">上一篇</a></li>
+         
+        
+       </ul>
+      </div>
+        
+     </div>
+    </div>
+   </div>
+  </div>
+  <script src="https://mankeep.github.io/media/scripts/jquery.js"></script>
+  <script src="https://mankeep.github.io/media/scripts/jquery-migrate-1.2.1.min.js"></script>
+  <script src="https://mankeep.github.io/media/scripts/jquery.appear.js"></script>
 
-<script type='text/javascript' src='https://mankeep.github.io/media/scripts/main.js'></script>
-</body>
+
+ </body>
 </html>
