@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://mankeep.github.io</id>
     <title>随然默记</title>
-    <updated>2019-11-06T07:44:29.593Z</updated>
+    <updated>2019-11-13T06:03:45.570Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://mankeep.github.io"/>
     <link rel="self" href="https://mankeep.github.io/atom.xml"/>
@@ -10,6 +10,19 @@
     <logo>https://mankeep.github.io/images/avatar.png</logo>
     <icon>https://mankeep.github.io/favicon.ico</icon>
     <rights>All rights reserved 2019, 随然默记</rights>
+    <entry>
+        <title type="html"><![CDATA[2019.11.12 最近厨艺剧减。。。。]]></title>
+        <id>https://mankeep.github.io/post/Q501VWzqf</id>
+        <link href="https://mankeep.github.io/post/Q501VWzqf">
+        </link>
+        <updated>2019-11-13T05:54:54.000Z</updated>
+        <summary type="html"><![CDATA[<p>双十一还是没怎么剁手的，一千多块而已~<br>
+11号晚上特别想吃家常豆腐，所以12号刘大人奉旨采购，还是做砸了……</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>双十一还是没怎么剁手的，一千多块而已~<br>
+11号晚上特别想吃家常豆腐，所以12号刘大人奉旨采购，还是做砸了……</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[这是一个收藏夹的导航]]></title>
         <id>https://mankeep.github.io/post/dh</id>
