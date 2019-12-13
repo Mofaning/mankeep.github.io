@@ -3,312 +3,226 @@
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>随然默记</title>
-<meta name="description" content="随缘，自然，慢慢记，默默记" />
-<link rel="shortcut icon" href="https://mankeep.github.io/favicon.ico?v=1574394051649">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<meta name="description" content="随缘，自然,慢慢记，默默记
+" />
+<link rel="shortcut icon" href="https://mankeep.github.io/favicon.ico?v=1576201636324">
 <link href="https://cdn.remixicon.com/releases/v1.3.1/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 
 <link rel="stylesheet" href="https://mankeep.github.io/styles/main.css">
 <link rel="alternate" type="application/atom+xml" title="随然默记 - Atom Feed" href="https://mankeep.github.io/atom.xml">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
   </head>
   <body>
-    <div id="app" class="main px-4 flex flex-col lg:flex-row">
-      <div id="sidebar" class="sidebar-wrapper lg:static lg:w-1/4">
-  <div class="lg:sticky top-0">
-    <div class="sidebar-content">
-      <div class="flex lg:block p-4 lg:px-0 items-center fixed lg:static lg:block top-0 right-0 left-0 bg-white z-50">
-        <i class="remixicon-menu-2-line lg:mt-4 text-2xl cursor-pointer animated fadeIn" onclick="openMenu()"></i>
-        <a href="https://mankeep.github.io">
-          <img class="animated fadeInLeft avatar rounded-lg mx-4 lg:mt-32 lg:mx-0 mt-0 lg:w-24 lg:h-24 w-12 w-12" src="https://mankeep.github.io/images/avatar.png?v=1574394051649" alt="">
-        </a>
-        <h1 class="animated fadeInLeft lg:text-4xl font-extrabold lg:mt-8 mt-0 text-xl" style="animation-delay: 0.2s">随然默记</h1>
+    <div class="head">
+  <div class="inner">
+    <a class="site-name" href="https://mankeep.github.io">
+        <span>随然默记</span>
+    </a>
+    <label class="burger" for="burger"></label>
+    <input id="burger" type="checkbox">
+    <button class="burger">
+      <div>
+        <span></span>
+        <span></span>
       </div>
+    </button>
+    <nav class="info_nav">
       
-        <div class="animated fadeInLeft" style="animation-delay: 0.4s">
-          <p class="my-4 text-gray-600 font-light hidden lg:block">
-            随缘，自然，慢慢记，默默记
-          </p>
-          <div class="animated fadeInLeft social-container hidden lg:block" style="animation-delay: 0.6s">
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-          </div>
-        </div>
-      
-    </div>
-  </div>
-</div>
-
-<div class="menu-container">
-  <i class="remixicon-arrow-left-line text-2xl cursor-pointer animated fadeIn close-menu-btn" onclick="closeMenu()"></i>
-  <div>
-    
-      
-        <a href="/" class="menu" style="animation-delay: 0s">
-          首页
-        </a>
-      
-    
-      
-        <a href="/archives" class="menu" style="animation-delay: 0.2s">
-          归档
-        </a>
-      
-    
-      
-        <a href="/tags" class="menu" style="animation-delay: 0.4s">
-          标签
-        </a>
-      
-    
-      
-        <a href="https://mankeep.github.io/post/dh/" class="menu" style="animation-delay: 0.6000000000000001s">
-          导航
-        </a>
-      
-    
-      
-        <a href="/post/about" class="menu" style="animation-delay: 0.8s">
-          关于
-        </a>
-      
-    
-  </div>
-  <div class="site-footer">
-    <div class="py-4 text-gray-700">Suiran moji  2019 - ？ Tks Gridea</div>
-    <a class="rss" href="https://mankeep.github.io/atom.xml" target="_blank">RSS</a>
-  </div>
-</div>
-<div class="mask" onclick="closeMenu()">
-</div>
-      <div class="content-wrapper py-32 lg:p-8 lg:w-3/4">
-        <h2 class="text-lg text-gray-700 mb-8">
-          <i class="remixicon-archive-line"></i> 文章归档
-        </h2>
         
-
-        <div class="archives-container">
-          
-            <h2 class="text-gray-600 py-4 animated fadeIn">
-              <i class="remixicon-map-pin-time-line"></i>
-              2019
-            </h2>
-            
-              
-                <a href="https://mankeep.github.io/post/20191116" class="post">
-                  <h2 class="inline-block font-bold text-lg post-title animated fadeIn">
-                    刘大人历时半年 赶赴考场
-                  </h2>
-                </a>
-                <div class="text-sm font-light mt-3 mb-6 text-gray-400 animated fadeInDown" style="animation-delay: 0.4s">2019-11-17</div>
-              
-            
-              
-                <a href="https://mankeep.github.io/post/21wecan" class="post">
-                  <h2 class="inline-block font-bold text-lg post-title animated fadeIn">
-                    中国卫生人才网是真垃圾
-                  </h2>
-                </a>
-                <div class="text-sm font-light mt-3 mb-6 text-gray-400 animated fadeInDown" style="animation-delay: 0.4s">2019-11-15</div>
-              
-            
-              
-                <a href="https://mankeep.github.io/post/Q501VWzqf" class="post">
-                  <h2 class="inline-block font-bold text-lg post-title animated fadeIn">
-                    2019.11.12 最近厨艺剧减。。。。
-                  </h2>
-                </a>
-                <div class="text-sm font-light mt-3 mb-6 text-gray-400 animated fadeInDown" style="animation-delay: 0.4s">2019-11-13</div>
-              
-            
-              
-                <a href="https://mankeep.github.io/post/dh" class="post">
-                  <h2 class="inline-block font-bold text-lg post-title animated fadeIn">
-                    这是一个收藏夹的导航
-                  </h2>
-                </a>
-                <div class="text-sm font-light mt-3 mb-6 text-gray-400 animated fadeInDown" style="animation-delay: 0.4s">2019-11-06</div>
-              
-            
-              
-                <a href="https://mankeep.github.io/post/20191105" class="post">
-                  <h2 class="inline-block font-bold text-lg post-title animated fadeIn">
-                    2019.11.05 随记
-                  </h2>
-                </a>
-                <div class="text-sm font-light mt-3 mb-6 text-gray-400 animated fadeInDown" style="animation-delay: 0.4s">2019-11-05</div>
-              
-            
-              
-                <a href="https://mankeep.github.io/post/jindoujiao" class="post">
-                  <h2 class="inline-block font-bold text-lg post-title animated fadeIn">
-                    吃焖面好去处~金豆角。
-                  </h2>
-                </a>
-                <div class="text-sm font-light mt-3 mb-6 text-gray-400 animated fadeInDown" style="animation-delay: 0.4s">2019-11-04</div>
-              
-            
-              
-                <a href="https://mankeep.github.io/post/win-centos" class="post">
-                  <h2 class="inline-block font-bold text-lg post-title animated fadeIn">
-                    纪录更换服务器 Win转Centos7
-                  </h2>
-                </a>
-                <div class="text-sm font-light mt-3 mb-6 text-gray-400 animated fadeInDown" style="animation-delay: 0.4s">2019-04-13</div>
-              
-            
-              
-                <a href="https://mankeep.github.io/post/chang-yong-gong-ju-app" class="post">
-                  <h2 class="inline-block font-bold text-lg post-title animated fadeIn">
-                    常用工具App
-                  </h2>
-                </a>
-                <div class="text-sm font-light mt-3 mb-6 text-gray-400 animated fadeInDown" style="animation-delay: 0.4s">2019-03-14</div>
-              
-            
-              
-                <a href="https://mankeep.github.io/post/da-jian-hve-notes-ji-lu" class="post">
-                  <h2 class="inline-block font-bold text-lg post-title animated fadeIn">
-                    搭建Hve Notes纪录
-                  </h2>
-                </a>
-                <div class="text-sm font-light mt-3 mb-6 text-gray-400 animated fadeInDown" style="animation-delay: 0.4s">2019-03-13</div>
-              
-            
-          
-        </div>
-
-        <div>
-          <div class="pagination-container animated fadeIn">
-  
-  
+          <a href="/">首页</a>
+        
+      
+        
+          <a href="/archives">归档</a>
+        
+      
+        
+          <a href="/tags">标签</a>
+        
+      
+        
+          <a href="https://mankeep.github.io/post/dh/">导航</a>
+        
+      
+        
+          <a href="/post/about">关于</a>
+        
+      
+    </nav>
+  </div>
 </div>
-
+    <div class="info _site">
+      <div class="inner">
+        <div class="info_main">
+          <h1 class="info_title"><i class="remixicon-archive-line"></i> 目前共计 9 篇创作</h1>
         </div>
       </div>
     </div>
-
-    <script src="https://mankeep.github.io/media/prism.js"></script>  
-<script>
-
-Prism.highlightAll()
-
-let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
-
-// This should probably be throttled.
-// Especially because it triggers during smooth scrolling.
-// https://lodash.com/docs/4.17.10#throttle
-// You could do like...
-// window.addEventListener("scroll", () => {
-//    _.throttle(doThatStuff, 100);
-// });
-// Only not doing it here to keep this Pen dependency-free.
-
-window.addEventListener("scroll", event => {
-  let fromTop = window.scrollY;
-
-  mainNavLinks.forEach((link, index) => {
-    let section = document.getElementById(decodeURI(link.hash).substring(1));
-    let nextSection = null
-    if (mainNavLinks[index + 1]) {
-      nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
-    }
-    if (section.offsetTop <= fromTop) {
-      if (nextSection) {
-        if (nextSection.offsetTop > fromTop) {
-          link.classList.add("current");
-        } else {
-          link.classList.remove("current");    
-        }
-      } else {
-        link.classList.add("current");
-      }
-    } else {
-      link.classList.remove("current");
-    }
-  });
-});
-
-
-document.addEventListener("DOMContentLoaded", function() {
-  var lazyImages = [].slice.call(document.querySelectorAll(".post-feature-image.lazy"));
-
-  if ("IntersectionObserver" in window) {
-    let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
-      entries.forEach(function(entry) {
-        if (entry.isIntersecting) {
-          let lazyImage = entry.target
-          lazyImage.style.backgroundImage = `url(${lazyImage.dataset.bg})`
-          lazyImage.classList.remove("lazy")
-          lazyImageObserver.unobserve(lazyImage)
-        }
-      });
-    });
-
-    lazyImages.forEach(function(lazyImage) {
-      lazyImageObserver.observe(lazyImage)
-    })
-  } else {
-    // Possibly fall back to a more compatible method here
-  }
-});
-
-const menuContainer = document.querySelector('.menu-container')
-const menus = document.querySelectorAll('.menu-container .menu')
-const mask = document.querySelector('.mask')
-const contentWrapper = document.querySelector('.content-wrapper')
-const latestArticle = document.querySelector('.latest-article')
-const readMore = document.querySelector('.read-more')
-const indexPage = document.querySelector('.index-page')
-
-const isHome = location.pathname === '/'
-if (latestArticle) {
-  latestArticle.style.display = isHome ? 'block' : 'none'
-  readMore.style.display = isHome ? 'block' : 'none'
-  indexPage.style.display = isHome ? 'none' : 'block'
-}
-
-const openMenu = () => {
-  menuContainer.classList.add('open')
-  menus.forEach(menu => {
-    menu.classList.add('animated', 'fadeInLeft')
-  })
-  mask.classList.add('open')
-  contentWrapper.classList.add('is-second')
-}
-
-const closeMenu = () => {
-  menuContainer.classList.remove('open')
-  menus.forEach(menu => {
-    menu.classList.remove('animated', 'fadeInLeft')
-  })
-  mask.classList.remove('open')
-  contentWrapper.classList.remove('is-second')
-}
-</script>
+    <div class="main">
+      <div class="inner">
+        <div class="items">
   
+    <div class="item Article">
+      
+        <a class="item-image js-cover" data-src="https://mankeep.github.io/post-images/20191116.jpeg" href="https://mankeep.github.io/post/20191116" style="background-image:url('https://mankeep.github.io/post-images/20191116.jpeg');"></a>
+      
+      <a class="item-main" href="https://mankeep.github.io/post/20191116">
+        <div class="item-meta">
+          <time datetime="2019-11-17 10:49:49">2019-11-17</time>
+        </div>
+        <h2>刘大人历时半年 赶赴考场</h2>
+      </a>
+    </div>
+  
+    <div class="item Article">
+      
+        <a class="item-image js-cover" data-src="https://mankeep.github.io/post-images/21wecan.png" href="https://mankeep.github.io/post/21wecan" style="background-image:url('https://mankeep.github.io/post-images/21wecan.png');"></a>
+      
+      <a class="item-main" href="https://mankeep.github.io/post/21wecan">
+        <div class="item-meta">
+          <time datetime="2019-11-15 09:38:51">2019-11-15</time>
+        </div>
+        <h2>中国卫生人才网是真垃圾</h2>
+      </a>
+    </div>
+  
+    <div class="item Article">
+      
+        <a class="item-image js-cover" data-src="https://mankeep.github.io/post-images/Q501VWzqf.jpeg" href="https://mankeep.github.io/post/Q501VWzqf" style="background-image:url('https://mankeep.github.io/post-images/Q501VWzqf.jpeg');"></a>
+      
+      <a class="item-main" href="https://mankeep.github.io/post/Q501VWzqf">
+        <div class="item-meta">
+          <time datetime="2019-11-13 13:54:54">2019-11-13</time>
+        </div>
+        <h2>2019.11.12 最近厨艺剧减。。。。</h2>
+      </a>
+    </div>
+  
+    <div class="item Article">
+      
+        <a class="item-image js-cover" data-src="https://mankeep.github.io/post-images/dh.jpeg" href="https://mankeep.github.io/post/dh" style="background-image:url('https://mankeep.github.io/post-images/dh.jpeg');"></a>
+      
+      <a class="item-main" href="https://mankeep.github.io/post/dh">
+        <div class="item-meta">
+          <time datetime="2019-11-06 14:54:19">2019-11-06</time>
+        </div>
+        <h2>这是一个收藏夹的导航</h2>
+      </a>
+    </div>
+  
+    <div class="item Article">
+      
+        <a class="item-image js-cover" data-src="https://mankeep.github.io/post-images/20191105.jpg" href="https://mankeep.github.io/post/20191105" style="background-image:url('https://mankeep.github.io/post-images/20191105.jpg');"></a>
+      
+      <a class="item-main" href="https://mankeep.github.io/post/20191105">
+        <div class="item-meta">
+          <time datetime="2019-11-05 14:50:08">2019-11-05</time>
+        </div>
+        <h2>2019.11.05 随记</h2>
+      </a>
+    </div>
+  
+    <div class="item Article">
+      
+        <a class="item-image js-cover" data-src="https://mankeep.github.io/post-images/jindoujiao.jpeg" href="https://mankeep.github.io/post/jindoujiao" style="background-image:url('https://mankeep.github.io/post-images/jindoujiao.jpeg');"></a>
+      
+      <a class="item-main" href="https://mankeep.github.io/post/jindoujiao">
+        <div class="item-meta">
+          <time datetime="2019-11-04 13:55:55">2019-11-04</time>
+        </div>
+        <h2>吃焖面好去处~金豆角。</h2>
+      </a>
+    </div>
+  
+    <div class="item Article">
+      
+        <a class="item-image js-cover" data-src="https://mankeep.github.io/post-images/win-centos.png" href="https://mankeep.github.io/post/win-centos" style="background-image:url('https://mankeep.github.io/post-images/win-centos.png');"></a>
+      
+      <a class="item-main" href="https://mankeep.github.io/post/win-centos">
+        <div class="item-meta">
+          <time datetime="2019-04-13 16:54:13">2019-04-13</time>
+        </div>
+        <h2>纪录更换服务器 Win转Centos7</h2>
+      </a>
+    </div>
+  
+    <div class="item Article">
+      
+        <a class="item-image js-cover" data-src="https://mankeep.github.io/post-images/chang-yong-gong-ju-app.png" href="https://mankeep.github.io/post/chang-yong-gong-ju-app" style="background-image:url('https://mankeep.github.io/post-images/chang-yong-gong-ju-app.png');"></a>
+      
+      <a class="item-main" href="https://mankeep.github.io/post/chang-yong-gong-ju-app">
+        <div class="item-meta">
+          <time datetime="2019-03-14 17:52:24">2019-03-14</time>
+        </div>
+        <h2>常用工具App</h2>
+      </a>
+    </div>
+  
+    <div class="item Article">
+      
+        <a class="item-image js-cover" data-src="https://mankeep.github.io/post-images/da-jian-hve-notes-ji-lu.png" href="https://mankeep.github.io/post/da-jian-hve-notes-ji-lu" style="background-image:url('https://mankeep.github.io/post-images/da-jian-hve-notes-ji-lu.png');"></a>
+      
+      <a class="item-main" href="https://mankeep.github.io/post/da-jian-hve-notes-ji-lu">
+        <div class="item-meta">
+          <time datetime="2019-03-13 14:57:45">2019-03-13</time>
+        </div>
+        <h2>搭建Hve Notes纪录</h2>
+      </a>
+    </div>
+  
+</div>
+
+        <div class="navigation">
+  
+  
+</div>
+      </div>
+    </div>
+    <footer class="footer">
+  <div class="main">
+    <a href="https://mankeep.github.io">
+      <img class="avatar" src="https://mankeep.github.io/images/avatar.png?v=1576201636324" alt="随然默记">
+    </a>
+    <div class="footer__social">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <p class="footer__sosumi">
+      Suiran moji  2019 - ？ Tks Gridea
+    </p>
+    <a class="footer-rss" href="https://mankeep.github.io/atom.xml">RSS</a>
+  </div>
+</footer>
+
+<script src="https://mankeep.github.io/media/prism.js"></script>
+<script>
+  Prism.highlightAll()
+</script>
+
   </body>
 </html>
