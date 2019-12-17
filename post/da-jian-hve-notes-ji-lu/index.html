@@ -3,9 +3,9 @@
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>搭建Hve Notes纪录 | 随然默记</title>
-<meta name="description" content="随缘，自然,慢慢记，默默记
+<meta name="description" content="慢慢记，默默记
 " />
-<link rel="shortcut icon" href="https://mankeep.github.io/favicon.ico?v=1576466536527">
+<link rel="shortcut icon" href="https://mankeep.github.io/favicon.ico?v=1576568942877">
 <link href="https://cdn.remixicon.com/releases/v1.3.1/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
@@ -137,11 +137,37 @@ Hve Notes 目前提供了 Gitalk 和 Disqus 两种评论系统支持。</p>
     
 
     
+      
+        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: '0239274251b859f63737',
+    clientSecret: '777a65a6c1e9c3e94b8058d503450a5141660386',
+    repo: 'mankeep.github.io',
+    owner: 'mankeep',
+    admin: ['mankeep'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+      
+
+      
+    
 
     <footer class="footer">
   <div class="main">
     <a href="https://mankeep.github.io">
-      <img class="avatar" src="https://mankeep.github.io/images/avatar.png?v=1576466536527" alt="随然默记">
+      <img class="avatar" src="https://mankeep.github.io/images/avatar.png?v=1576568942877" alt="随然默记">
     </a>
     <div class="footer__social">
       
