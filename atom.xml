@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://mofaning.github.io</id>
     <title>随然默记</title>
-    <updated>2020-01-07T06:28:14.900Z</updated>
+    <updated>2020-03-09T01:22:28.166Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://mofaning.github.io"/>
     <link rel="self" href="https://mofaning.github.io/atom.xml"/>
@@ -13,22 +13,22 @@
     <rights>All rights reserved 2020, 随然默记</rights>
     <entry>
         <title type="html"><![CDATA[二零二零年第一场雪]]></title>
-        <id>https://mofaning.github.io/post/2020xue</id>
-        <link href="https://mofaning.github.io/post/2020xue">
+        <id>https://mofaning.github.io/post/2020xue/</id>
+        <link href="https://mofaning.github.io/post/2020xue/">
         </link>
         <updated>2020-01-06T08:45:25.000Z</updated>
     </entry>
     <entry>
         <title type="html"><![CDATA[二零一九年十二月]]></title>
-        <id>https://mofaning.github.io/post/happyliu2019</id>
-        <link href="https://mofaning.github.io/post/happyliu2019">
+        <id>https://mofaning.github.io/post/happyliu2019/</id>
+        <link href="https://mofaning.github.io/post/happyliu2019/">
         </link>
         <updated>2019-12-24T04:20:56.000Z</updated>
     </entry>
     <entry>
         <title type="html"><![CDATA[刘大人历时半年 赶赴考场]]></title>
-        <id>https://mofaning.github.io/post/20191116</id>
-        <link href="https://mofaning.github.io/post/20191116">
+        <id>https://mofaning.github.io/post/20191116/</id>
+        <link href="https://mofaning.github.io/post/20191116/">
         </link>
         <updated>2019-11-17T02:49:49.000Z</updated>
         <summary type="html"><![CDATA[<p>2019.11.16 天气晴  干冷 今天考的是健康管理师<br>
@@ -44,8 +44,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[中国卫生人才网是真垃圾]]></title>
-        <id>https://mofaning.github.io/post/21wecan</id>
-        <link href="https://mofaning.github.io/post/21wecan">
+        <id>https://mofaning.github.io/post/21wecan/</id>
+        <link href="https://mofaning.github.io/post/21wecan/">
         </link>
         <updated>2019-11-15T01:38:51.000Z</updated>
         <summary type="html"><![CDATA[<p>帮刘大人打印个准考证，现在主要用mac，家里pc已经歇菜很久，导师们强推360，也不知道360啥时候就成了ie一样的东西，什么政府的东西都首选360作为浏览器去操作，于是开始换浏览器和pc与mac之间的操作……</p>
@@ -55,8 +55,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[2019.11.12 最近厨艺剧减。。。。]]></title>
-        <id>https://mofaning.github.io/post/Q501VWzqf</id>
-        <link href="https://mofaning.github.io/post/Q501VWzqf">
+        <id>https://mofaning.github.io/post/Q501VWzqf/</id>
+        <link href="https://mofaning.github.io/post/Q501VWzqf/">
         </link>
         <updated>2019-11-13T05:54:54.000Z</updated>
         <summary type="html"><![CDATA[<p>双十一没怎么剁手，一千多块<br>
@@ -68,8 +68,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[这是一个收藏夹的导航]]></title>
-        <id>https://mofaning.github.io/post/dh</id>
-        <link href="https://mofaning.github.io/post/dh">
+        <id>https://mofaning.github.io/post/dh/</id>
+        <link href="https://mofaning.github.io/post/dh/">
         </link>
         <updated>2019-11-06T06:54:19.000Z</updated>
         <summary type="html"><![CDATA[<p>一些常用网址和工具类网站</p>
@@ -79,8 +79,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[2019.11.05 随记]]></title>
-        <id>https://mofaning.github.io/post/20191105</id>
-        <link href="https://mofaning.github.io/post/20191105">
+        <id>https://mofaning.github.io/post/20191105/</id>
+        <link href="https://mofaning.github.io/post/20191105/">
         </link>
         <updated>2019-11-05T06:50:08.000Z</updated>
         <summary type="html"><![CDATA[<p>天气不错<br>
@@ -94,8 +94,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[吃焖面好去处~金豆角。]]></title>
-        <id>https://mofaning.github.io/post/jindoujiao</id>
-        <link href="https://mofaning.github.io/post/jindoujiao">
+        <id>https://mofaning.github.io/post/jindoujiao/</id>
+        <link href="https://mofaning.github.io/post/jindoujiao/">
         </link>
         <updated>2019-11-04T05:55:55.000Z</updated>
         <summary type="html"><![CDATA[<p>这是发生在10月26号的事情<br>
@@ -107,8 +107,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[纪录更换服务器 Win转Centos7]]></title>
-        <id>https://mofaning.github.io/post/win-centos</id>
-        <link href="https://mofaning.github.io/post/win-centos">
+        <id>https://mofaning.github.io/post/win-centos/</id>
+        <link href="https://mofaning.github.io/post/win-centos/">
         </link>
         <updated>2019-04-13T08:54:13.000Z</updated>
         <summary type="html"><![CDATA[<p>Windows 2008 r2  换 Centos 7<br>
@@ -128,8 +128,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[常用工具App]]></title>
-        <id>https://mofaning.github.io/post/chang-yong-gong-ju-app</id>
-        <link href="https://mofaning.github.io/post/chang-yong-gong-ju-app">
+        <id>https://mofaning.github.io/post/chang-yong-gong-ju-app/</id>
+        <link href="https://mofaning.github.io/post/chang-yong-gong-ju-app/">
         </link>
         <updated>2019-03-14T09:52:24.000Z</updated>
         <summary type="html"><![CDATA[<p>一些常用app 会增删改查，囤积癖要改，探索的欲望总是无休止~</p>
