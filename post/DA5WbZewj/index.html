@@ -1,0 +1,199 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>装系统风波。 | 随然默记</title>
+<meta name="description" content="慢慢记，默默记
+" />
+<link rel="shortcut icon" href="https://mofaning.github.io/favicon.ico?v=1583803972938">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+<link rel="stylesheet" href="https://mofaning.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="装系统风波。 | 随然默记 - Atom Feed" href="https://mofaning.github.io/atom.xml">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+  </head>
+  <body>
+    <div class="site-nav no-cover">
+      <div class="head">
+  <div class="inner">
+    <a class="site-name" href="https://mofaning.github.io">
+        <span>随然默记</span>
+    </a>
+    <label class="burger" for="burger"></label>
+    <input id="burger" type="checkbox">
+    <button class="burger">
+      <div>
+        <span></span>
+        <span></span>
+      </div>
+    </button>
+    <nav class="info_nav">
+      
+        
+          <a href="/">首页</a>
+        
+      
+        
+          <a href="/archives">归档</a>
+        
+      
+        
+          <a href="https://mofaning.github.io/post/dh">导航</a>
+        
+      
+        
+          <a href="/tags">标签</a>
+        
+      
+        
+          <a href="/post/about">关于</a>
+        
+      
+    </nav>
+  </div>
+</div>
+    </div>
+    <article role="main" class="hentry ">
+      
+      <h1 class="entry-title" itemprop="headline">装系统风波。</h1>
+      <div class="entry-meta">
+        <time class="updated" datetime="2020-03-10 09:02:05">2020-03-10</time>
+        <span class="author vcard">
+          3 min read
+        </span>
+      </div>
+      <div class="post-content yue">
+        <h3 id="隔离回公司第一件事就是装系统">隔离回公司第一件事就是装系统</h3>
+<p><strong>说来奇怪</strong><br>
+因为疫情事件公司电脑一个多月木有开机，结果一启动多台电脑无法开机，<br>
+甚至系统无法恢复，一直循环在自修状态并维持一上午。<br>
+嘿，更惨的是还没带U盘，上班的同事还都没拿，也就弄不了PE；</p>
+<p><strong>第一步借用其他主机借尸还魂</strong><br>
+把固态硬盘拆了直接放在好的上装完换回，其实此方法是可行的，可惜是做了件错事把盘隔了没分好区。<br>
+这是后话了，装完的我直接拆了过去，怎么开都开不开，一度以为主板设置问题，不停扣boot<br>
+期间还遇到了<br>
+windows安装程序无法将windows配置为此计算机的硬件上运行。微软官方给出：</p>
+<blockquote>
+<blockquote>
+<p>手动运行 msoobe 以完成安装<br>
+此问题可能的解决方法是手动运行 msoobe 程序 (这可确保激活并正确注册 Microsoft Windows 版本) 以允许安装完成。请按照以下步骤手动运行 msoobe 程序:<br>
+Windows 7:<br>
+在错误屏幕中, 按Shift + F10打开命令提示符 (或在 Windows 搜索栏中键入cmd , 并从搜索结果菜单中选择 &quot;命令提示符&quot;)。<br>
+键入cd \ , 然后按 enter 键。<br>
+键入cd x: \windows\system32\oobe ( x是安装 Windows 的驱动器号, 例如 c:\windows\system32\oobe), 然后按 enter 键。<br>
+键入msoobe , 然后按 enter 键。安装过程现在应该会自动继续。<br>
+卸下安装介质, 系统应完成安装并引导至 Windows。<br>
+Windows 10:<br>
+在显示错误的屏幕中, 按Shift + F10以打开命令提示符。<br>
+键入CD x: \windows\system32\oobe (其中x是安装了 Windows 的驱动器号, 例如 C:\windows\system32\oobe), 然后按Enter 键。<br>
+键入msoobe , 然后按Enter 键。<br>
+然后, 系统会提示您创建帐户名称和密码, 并设置时间和日期。完成后, 单击完成。<br>
+注: 如果这是 Windows 10 的零售版本, 还可能会提示您输入 Windows 10 的产品密钥。输入产品密钥, 然后单击Finish (完成)。<br>
+安装过程随后应完成, 并允许计算机引导至 Windows。</p>
+</blockquote>
+</blockquote>
+<p><strong>然并卵第二步还得靠UP</strong><br>
+找到了年前在张大妈上捡的雷克沙，随便抓了个pe系统就上了，进去一看才发现分区问题，没给系统盘分ESP MSR</p>
+<blockquote>
+<p>https://jingyan.baidu.com/article/4f34706e7daeb6e387b56d00.html 关于esp/msr分区方面</p>
+</blockquote>
+<p>之后的步骤就很顺畅了，完美结局，但是无缘无故怎么就都系统出了问题，还有一个固态+机械，单飞固态就完美，双剑合璧就卡逼，还是都换了固态可行～</p>
+<p><strong>总结</strong><br>
+没有pe装不了的系统<br>
+分区一定要看好</p>
+
+      </div>
+      <div class="entry-block">
+        <div class="entry-tags">
+          
+        </div>
+      </div>
+    </article>
+    
+    
+      <section class="post-section prev-post">
+        <div class="inner">
+          <h3>后一篇</h3>
+          <a href="https://mofaning.github.io/post/2020xue/">
+            <strong>二零二零年第一场雪</strong>
+          </a>
+        </div>
+      </section>
+    
+
+    
+      
+        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: '0239274251b859f63737',
+    clientSecret: '777a65a6c1e9c3e94b8058d503450a5141660386',
+    repo: 'mankeep.github.io',
+    owner: 'Mofaning',
+    admin: ['Mofaning'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+      
+
+      
+    
+
+    <footer class="footer">
+  <div class="main">
+    <a href="https://mofaning.github.io">
+      <img class="avatar" src="https://mofaning.github.io/images/avatar.png?v=1583803972938" alt="随然默记">
+    </a>
+    <div class="footer__social">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <p class="footer__sosumi">
+      Suiran moji  2019 - ？ Tks Gridea
+    </p>
+    <a class="footer-rss" href="https://mofaning.github.io/atom.xml">RSS</a>
+  </div>
+</footer>
+
+<script src="https://mofaning.github.io/media/prism.js"></script>
+<script>
+  Prism.highlightAll()
+</script>
+
+  </body>
+</html>
