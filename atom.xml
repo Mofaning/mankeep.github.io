@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://mofaning.github.io</id>
     <title>随然默记</title>
-    <updated>2020-04-15T00:20:25.684Z</updated>
+    <updated>2020-04-29T07:06:35.311Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://mofaning.github.io"/>
     <link rel="self" href="https://mofaning.github.io/atom.xml"/>
@@ -11,6 +11,13 @@
     <logo>https://mofaning.github.io/images/avatar.png</logo>
     <icon>https://mofaning.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 随然默记</rights>
+    <entry>
+        <title type="html"><![CDATA[2020.04.14 最近刘大人在减肥]]></title>
+        <id>https://mofaning.github.io/post/2020-04-12/</id>
+        <link href="https://mofaning.github.io/post/2020-04-12/">
+        </link>
+        <updated>2020-04-14T09:31:51.000Z</updated>
+    </entry>
     <entry>
         <title type="html"><![CDATA[装系统风波。]]></title>
         <id>https://mofaning.github.io/post/20200309win10os/</id>
@@ -104,19 +111,6 @@
         <content type="html"><![CDATA[<p>天气不错<br>
 头疼ing 感冒后遗症。<br>
 心理乱糟糟，啥都不想干。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[吃焖面好去处~金豆角。]]></title>
-        <id>https://mofaning.github.io/post/jindoujiao/</id>
-        <link href="https://mofaning.github.io/post/jindoujiao/">
-        </link>
-        <updated>2019-11-04T05:55:55.000Z</updated>
-        <summary type="html"><![CDATA[<p>这是发生在10月26号的事情<br>
-秋转冬，总是发现没穿的，于是和爱妃跑到木樨园开始琢磨着购物，到了已经12点多了，饥饿难耐啊，到了木樨园其实还是变化挺大，来这边买衣服也是三年前了吧，当时天蓝尾货还在，现在楼在人空，也多了几分颓废之势；</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>这是发生在10月26号的事情<br>
-秋转冬，总是发现没穿的，于是和爱妃跑到木樨园开始琢磨着购物，到了已经12点多了，饥饿难耐啊，到了木樨园其实还是变化挺大，来这边买衣服也是三年前了吧，当时天蓝尾货还在，现在楼在人空，也多了几分颓废之势；</p>
 ]]></content>
     </entry>
 </feed>
